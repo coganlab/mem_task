@@ -1,10 +1,12 @@
+
+
 % Clear the workspace
 sca;
 close all;
 clearvars;
 
 %Specify directories
-cd('C:\Users\Richy\Desktop\PTB\Memieeg')
+% cd('C:\Users\Richy\Desktop\PTB\Memieeg')
 cf = pwd;
 save_data = fullfile(cf,'data','behav_data');
 block_data = fullfile(cf,'data','sub_lists');
@@ -72,10 +74,8 @@ end
 %% Load block order from csv file
 
 block_file = fullfile(block_data,subID, [subID '_' blockID '.csv']);
-[~,~,csv] = xlsread(block_file);
-dim_names = {csv(1,:)};
-csv = cell2struct(csv,dim_names{1, 1},2);
-csv = csv(2:end);
+csv = readtable(block_file);
+csv = table2struct(csv)
 trial_type = {csv(:).trial_type};
 % Trial numbers
 n_encoding = sum(~cellfun('isempty', strfind(trial_type, 'Encoding')));
@@ -498,7 +498,7 @@ csv(row_iterator).recall_rt =  recall_response_time;
 
 %% Loop End (here the loop ends, before saving the data
 csv = struct2table(csv);
-writetable(csv,name2save);
+%writetable(csv,name2save);
 Screen('CloseAll');
 %%
 
