@@ -7,6 +7,7 @@ arguments
     
 end
 % A function that runs an associative memory task in pyschtoolbox.
+%
 % The task is to name the associate an object with the face of a celebrity, and then remember the association
 % The task is divided into blocks. 
 % Each block is divided into trials.
@@ -28,15 +29,11 @@ object_folder = fullfile(cf,'stimuli','objects');
 
 encoding_time = 1.5;
 elaborate_time = 3;
-rest_time = 10;
+
+rest_time = 5;
+
 fc_time = 4;
 retrieval_time = 4;
-
-%encoding_time = 1.5;
-%elaborate_time = 1;
-%rest_time = 10;
-%fc_time = 1;
-%retrieval_time = 1;
 
 % fixation cross limits
 low_lim = 0.5;
@@ -150,7 +147,7 @@ Screen('Preference', 'SkipSyncTests', 1); % <-remove me?
 %select external screen if possible
 screens = Screen('Screens');
 dispScreen = max(screens);
-%dispScreen = 1; %% DELETE LATER
+dispScreen = 1; %% DELETE LATER
 
 % Define black and white
 black = BlackIndex(dispScreen);
@@ -188,7 +185,6 @@ num_2 = KbName('2');
 num_3 = KbName('3');
 num_4 = KbName('4');
 escape = KbName('ESCAPE'); %escape key (to exit experiment)
-spaceKey = KbName('space');
 RestrictKeysForKbCheck([]); %ensure all keypresses are tracked
 
 
@@ -206,38 +202,14 @@ time = strcat(num2str(c(1)),'_',num2str(c(2)),'_',num2str(c(3)),'_',num2str(c(4)
 taskStartTime = GetSecs; % time experiment starts
 
 %% Set Trial (remove after generate the loop)
-%trial_idx = 1;
+trial_idx = 1;
 
 %% Wait for Subject input
 DrawFormattedText(windowPtr, 'To start the experiment press the spacebar', 'center', 'center', black);
 Screen('Flip', windowPtr);
-spaceKey = KbName('space');
 
-while true
-    % Check the state of the keyboard.
-    [keyIsDown, ~, keyCode] = KbCheck;
-    if keyIsDown
-        if keyCode(spaceKey)
-            break;
-        end
-    end
-end
-
-stimFlipFrames = round(10/ifi);
-second = round(1/ifi);
-frameCount = 1;
-
-while frameCount <= stimFlipFrames
-    curr_frames = stimFlipFrames - frameCount;
-    curr_time = round(curr_frames/second);
-    DrawFormattedText(windowPtr, ['The experiment will start in: ' num2str(curr_time) ' seconds'], 'center', 'center', black);
-    Screen('Flip', windowPtr);
-    frameCount = frameCount + 1;
-end
 
 %% Encoding Loop
-
-for trial_idx = 1:n_encoding
 %Read Stimuli
 trial_face = imread(fullfile(face_folder, [enc_face_order{trial_idx,1} '.png']));
 face_name = enc_face_order{trial_idx,1};
@@ -291,7 +263,7 @@ stimFlipFrames = round(fix_duration/ifi);
 frameCount = 1;
 
 while frameCount <= stimFlipFrames
-    DrawFormattedText(windowPtr, '+', 'center', 'center', black);
+    %DrawFormattedText(windowPtr, '+', 'center', 'center', black);
     Screen('Flip', windowPtr);
     frameCount = frameCount + 1;
 end
@@ -304,7 +276,7 @@ keyPressed = 0;
 responses = zeros(stimFlipFrames,3);
 
 while frameCount <= stimFlipFrames
-    DrawFormattedText(windowPtr, 'Elaborate', 'center', maxHeight * 0.2, black);
+    DrawFormattedText(windowPtr, 'Imagine', 'center', maxHeight * 0.2, black);
     DrawFormattedText(windowPtr, '+', 'center', 'center', black);
     
     if frameCount <= 3
@@ -351,7 +323,7 @@ csv(trial_idx).elaborate_onset=  elaborate_Onset;
 csv(trial_idx).elaborate_end =  elaborate_End;
 csv(trial_idx).elaborate_response =  choice;
 csv(trial_idx).elaborate_rt =  response_time;
-end
+
 
 %% Rest Between Phases
 
@@ -368,7 +340,6 @@ while frameCount <= stimFlipFrames
 end
 
 %% Retrieval Trial
-for trial_idx = 1:n_retrieval
 
 %Read Stimuli
 row_iterator = trial_idx + n_encoding;
@@ -477,7 +448,7 @@ stimFlipFrames = round(fix_duration/ifi);
 frameCount = 1;
 
 while frameCount <= stimFlipFrames
-    DrawFormattedText(windowPtr, '+', 'center', 'center', black);
+    %DrawFormattedText(windowPtr, '+', 'center', 'center', black);
     Screen('Flip', windowPtr);
     frameCount = frameCount + 1;
 end
@@ -539,12 +510,20 @@ csv(row_iterator).recall_end =  recall_End;
 csv(row_iterator).recall_response =  recall_choice;
 csv(row_iterator).recall_rt =  recall_response_time;
 
-end
+
 %% Loop End (here the loop ends, before saving the data
 csv = struct2table(csv);
-writetable(csv,name2save);
+%writetable(csv,name2save);
 Screen('CloseAll');
 %%
+
+
+
+
+
+
+
+
 
 
 end
