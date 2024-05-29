@@ -32,11 +32,11 @@ rest_time = 10;
 fc_time = 4;
 retrieval_time = 4;
 
-%encoding_time = 1.5;
-%elaborate_time = 1;
-%rest_time = 10;
-%fc_time = 1;
-%retrieval_time = 1;
+encoding_time = 1.5;
+elaborate_time = 1;
+rest_time = 5;
+fc_time = 1;
+retrieval_time = 1;
 
 % fixation cross limits
 low_lim = 0.5;
@@ -238,6 +238,12 @@ end
 %% Encoding Loop
 
 for trial_idx = 1:n_encoding
+    
+to_exit = pause_script(windowPtr);
+if to_exit
+    sca;
+    return
+end
 %Read Stimuli
 trial_face = imread(fullfile(face_folder, [enc_face_order{trial_idx,1} '.png']));
 face_name = enc_face_order{trial_idx,1};
@@ -282,8 +288,8 @@ while frameCount <= stimFlipFrames
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
 end
 
-encoding_Onset = flipTimes(1) - taskStartTime;
-encoding_End = flipTimes(end) - taskStartTime;
+encoding_Onset = flipTimes(1,1) - taskStartTime;
+encoding_End = flipTimes(1,end) - taskStartTime;
 
 % Fixation Cross
 fix_duration = round( low_lim + (upp_lim - low_lim) * rand,2);
@@ -370,6 +376,12 @@ end
 %% Retrieval Trial
 for trial_idx = 1:n_retrieval
 
+to_exit = pause_script(windowPtr);
+if to_exit
+    sca;
+    return
+end    
+    
 %Read Stimuli
 row_iterator = trial_idx + n_encoding;
 retrieval_type = ret_type_order{trial_idx,1};
