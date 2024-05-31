@@ -17,12 +17,14 @@ end
 
 %%
 %Specify directories
+% here is a change
 
 cf = pwd;
 save_data = fullfile(cf,'data','behav_data');
 block_data = fullfile(cf,'data','sub_lists');
 face_folder = fullfile(cf,'stimuli','faces');
 object_folder = fullfile(cf,'stimuli','objects');
+instruction_folder = fullfile(cf,'instructions');
 
 %% Specify time intervals in seconds
 
@@ -199,14 +201,40 @@ centeredCircle = CenterRectOnPointd(baseCircle, maxWidth-0.5*baseCircleDiam, 1+0
 circleColor1 = [white white white]; % white
 circleColor2 = [black black black]; % black
 
+%% Instructions
+dstRect = [0 0 maxWidth maxHeight];
+n_slides = 12;
+if block == 0
+    for slide_idx = 1:n_slides
+        
+        inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.jpeg']));
+        inst = Screen('MakeTexture', windowPtr, inst);
+        Screen('DrawTexture', windowPtr, inst, [], dstRect);
+        Screen('Flip', windowPtr);
+        
+        spaceKey = KbName('space');
+        
+        while true
+            % Check the state of the keyboard.
+            [keyIsDown, ~, keyCode] = KbCheck;
+            if keyIsDown
+                if keyCode(spaceKey)
+                    break;
+                end
+            end
+        end
+        
+    end
+end
+
+
 %% Start Task
 % Set up the experiment
 c = clock; %Current date and time as date vector. [year month day hour minute seconds]
 time = strcat(num2str(c(1)),'_',num2str(c(2)),'_',num2str(c(3)),'_',num2str(c(4)),'_',num2str(c(5))); %makes unique filename
 taskStartTime = GetSecs; % time experiment starts
 
-%% Set Trial (remove after generate the loop)
-%trial_idx = 1;
+
 
 %% Wait for Subject input
 DrawFormattedText(windowPtr, 'To start the experiment press the spacebar', 'center', 'center', black);
@@ -244,6 +272,7 @@ if to_exit
     sca;
     return
 end
+
 %Read Stimuli
 trial_face = imread(fullfile(face_folder, [enc_face_order{trial_idx,1} '.png']));
 face_name = enc_face_order{trial_idx,1};
@@ -255,7 +284,7 @@ trial_object = Screen('MakeTexture', windowPtr, trial_object);
 xPos1 = (maxWidth - s2 - s4 - gap) / 2;
 xPos2 = xPos1 + s2 + gap;
 yPos = (maxHeight - s1) / 2;
-yPositionLabel = yPos + s3 / 2 + 210; % Position below the right image
+yPositionLabel = (yPos + s3 / 2 ) + 179; % Position below the right image
 
 % Center the rectangles on the calculated positions
 dstRect1 = CenterRectOnPointd(rect1, xPos1 + s2 / 2, yPos + s1 / 2);
@@ -284,8 +313,9 @@ while frameCount <= stimFlipFrames
     if frameCount <= 3
         Screen('FillOval', windowPtr, circleColor2, centeredCircle, baseCircleDiam);
     end
-    frameCount = frameCount + 1;
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
+    frameCount = frameCount + 1;
+
 end
 
 encoding_Onset = flipTimes(1,1) - taskStartTime;
@@ -336,8 +366,9 @@ while frameCount <= stimFlipFrames
         responses(frameCount,:) = [keyPressed,respOnset,find(keyCode)];
     end
     
-    frameCount = frameCount + 1;
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
+    frameCount = frameCount + 1;
+
     
 end
 
@@ -466,8 +497,9 @@ while frameCount <= stimFlipFrames
         responses(frameCount,:) = [keyPressed,respOnset,find(keyCode)];
     end
     
-    frameCount = frameCount + 1;
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
+    frameCount = frameCount + 1;
+
 end
 
 fc_Onset = flipTimes(1) - taskStartTime;
@@ -530,8 +562,9 @@ while frameCount <= stimFlipFrames
         responses(frameCount,:) = [keyPressed,respOnset,find(keyCode)];
     end
     
-    frameCount = frameCount + 1;
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
+    frameCount = frameCount + 1;
+
     
     
 end
