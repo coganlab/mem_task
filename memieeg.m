@@ -1,7 +1,7 @@
 function memieeg(subject, block, txtsize)
 arguments
     
-    subject(1,:)char = 'test'
+    subject(1,:)char = 'S01'
     block(1,1){mustBeInteger} = 0
     txtsize(1,1){mustBeNumeric} = 40
     
@@ -26,19 +26,12 @@ face_folder = fullfile(cf,'stimuli','faces');
 object_folder = fullfile(cf,'stimuli','objects');
 instruction_folder = fullfile(cf,'instructions');
 
-%% Specify time intervals in seconds
-
+%% Specify time intervals in seconds241324321432 
 encoding_time = 1.5;
 elaborate_time = 3;
-rest_time = 10;
-fc_time = 4;
-retrieval_time = 4;
-
-encoding_time = 1.5;
-elaborate_time = 1;
-rest_time = 5;
-fc_time = 1;
-retrieval_time = 1;
+rest_time = 20;
+fc_time = 3;
+retrieval_time = 3;
 
 % fixation cross limits
 low_lim = 0.5;
@@ -151,8 +144,12 @@ AssertOpenGL;
 Screen('Preference', 'SkipSyncTests', 1); % <-remove me?
 %select external screen if possible
 screens = Screen('Screens');
-dispScreen = max(screens);
-%dispScreen = 1; %% DELETE LATER
+
+if ispc
+    dispScreen = 1; %% For Debugging
+else
+    dispScreen = max(screens);
+end
 
 % Define black and white
 black = BlackIndex(dispScreen);
@@ -203,15 +200,14 @@ circleColor2 = [black black black]; % black
 
 %% Instructions
 dstRect = [0 0 maxWidth maxHeight];
-n_slides = 12;
+n_slides = 3;
+
 if block == 0
     for slide_idx = 1:n_slides
-        
-        inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.jpeg']));
+        inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.jpg']));
         inst = Screen('MakeTexture', windowPtr, inst);
         Screen('DrawTexture', windowPtr, inst, [], dstRect);
         Screen('Flip', windowPtr);
-        
         spaceKey = KbName('space');
         
         while true
@@ -219,12 +215,17 @@ if block == 0
             [keyIsDown, ~, keyCode] = KbCheck;
             if keyIsDown
                 if keyCode(spaceKey)
+                    keyIsDown = 0;
+                    keyCode = 0;
                     break;
-                end
+             end
             end
-        end
-        
+        end    
+        keyIsDown = 0;
+        keyCode = 0;
+        WaitSecs(1);
     end
+    
 end
 
 
@@ -266,13 +267,15 @@ end
 %% Encoding Loop
 
 for trial_idx = 1:n_encoding
-    
-to_exit = pause_script(windowPtr);
-if to_exit
-    sca;
-    return
-end
 
+    if ~ispc %for debugging
+        to_exit = pause_script(windowPtr);
+        if to_exit
+            sca;
+            return
+        end
+    end
+    
 %Read Stimuli
 trial_face = imread(fullfile(face_folder, [enc_face_order{trial_idx,1} '.png']));
 face_name = enc_face_order{trial_idx,1};
@@ -340,7 +343,7 @@ keyPressed = 0;
 responses = zeros(stimFlipFrames,3);
 
 while frameCount <= stimFlipFrames
-    DrawFormattedText(windowPtr, 'Elaborate', 'center', maxHeight * 0.2, black);
+    DrawFormattedText(windowPtr, 'Mental Image: Elaborate', 'center', maxHeight * 0.2, black);
     DrawFormattedText(windowPtr, '+', 'center', 'center', black);
     
     if frameCount <= 3
@@ -363,7 +366,8 @@ while frameCount <= stimFlipFrames
     [keyPressed,respOnset,keyCode] = KbCheck;
     
     if keyPressed
-        responses(frameCount,:) = [keyPressed,respOnset,find(keyCode)];
+        temp_resp = [keyPressed,respOnset,find(keyCode)];
+        responses(frameCount,:) = temp_resp(1:3);
     end
     
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
@@ -390,6 +394,34 @@ csv(trial_idx).elaborate_response =  choice;
 csv(trial_idx).elaborate_rt =  response_time;
 end
 
+
+
+%% Instructions
+dstRect = [0 0 maxWidth maxHeight];
+
+if block == 0
+    for slide_idx = (4:6)
+        inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.jpg']));
+        inst = Screen('MakeTexture', windowPtr, inst);
+        Screen('DrawTexture', windowPtr, inst, [], dstRect);
+        Screen('Flip', windowPtr);
+        spaceKey = KbName('space');
+        while true
+            % Check the state of the keyboard.
+            [keyIsDown, ~, keyCode] = KbCheck;
+            if keyIsDown
+                if keyCode(spaceKey)
+                    break;
+                end
+            end
+        end
+        keyIsDown = 0;
+        keyCode = 0;
+        WaitSecs(1);
+    end
+end
+
+
 %% Rest Between Phases
 
 stimFlipFrames = round(rest_time/ifi);
@@ -407,11 +439,13 @@ end
 %% Retrieval Trial
 for trial_idx = 1:n_retrieval
 
-to_exit = pause_script(windowPtr);
-if to_exit
-    sca;
-    return
-end    
+    if ~ispc %for debugging
+        to_exit = pause_script(windowPtr);
+        if to_exit
+            sca;
+            return
+        end
+    end
     
 %Read Stimuli
 row_iterator = trial_idx + n_encoding;
@@ -494,7 +528,8 @@ while frameCount <= stimFlipFrames
     [keyPressed,respOnset,keyCode] = KbCheck;
     
     if keyPressed
-        responses(frameCount,:) = [keyPressed,respOnset,find(keyCode)];
+        temp_resp = [keyPressed,respOnset,find(keyCode)];
+        responses(frameCount,:) = temp_resp(1:3);
     end
     
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
@@ -547,7 +582,7 @@ while frameCount <= stimFlipFrames
     end
     
     % Second part
-    DrawFormattedText(windowPtr, 'Recall', 'center', maxHeight * 0.2, black);
+    DrawFormattedText(windowPtr, 'Mental Image: Recall', 'center', maxHeight * 0.2, black);
     DrawFormattedText(windowPtr, '+', 'center', 'center', black);
     
     for i = 1:length(numbers)
@@ -559,7 +594,8 @@ while frameCount <= stimFlipFrames
     [keyPressed,respOnset,keyCode] = KbCheck;
     
     if keyPressed
-        responses(frameCount,:) = [keyPressed,respOnset,find(keyCode)];
+        temp_resp = [keyPressed,respOnset,find(keyCode)];
+        responses(frameCount,:) = temp_resp(1:3);
     end
     
     flipTimes(1,frameCount) = Screen('Flip',windowPtr);
@@ -585,11 +621,35 @@ csv(row_iterator).recall_response =  recall_choice;
 csv(row_iterator).recall_rt =  recall_response_time;
 
 end
+
+%% Instructions
+dstRect = [0 0 maxWidth maxHeight];
+
+if block == 0
+    for slide_idx = 8
+        inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.jpg']));
+        inst = Screen('MakeTexture', windowPtr, inst);
+        Screen('DrawTexture', windowPtr, inst, [], dstRect);
+        Screen('Flip', windowPtr);
+        spaceKey = KbName('space');
+        while true
+            % Check the state of the keyboard.
+            [keyIsDown, ~, keyCode] = KbCheck;
+            if keyIsDown
+                if keyCode(spaceKey)
+                    break;
+                end
+            end
+        end
+        
+    end
+end
+
+
 %% Loop End (here the loop ends, before saving the data
 csv = struct2table(csv);
 writetable(csv,name2save);
 Screen('CloseAll');
-%%
 
 
 end
