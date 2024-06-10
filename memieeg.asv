@@ -38,11 +38,7 @@ rest_time = 20;
 fc_time = 3;
 retrieval_time = 3;
 
-encoding_time = 0.1;
-elaborate_time =0.1;
-rest_time = 2;
-fc_time = 0.1;
-retrieval_time = 0.1;
+
 
 % fixation cross limits
 low_lim = 0.5;
@@ -406,6 +402,7 @@ for block_idx = block:6
         data_csv(trial_total).response =  NaN;
         data_csv(trial_total).correct_response =  NaN;
         data_csv(trial_total).response_onset =  NaN;
+        data_csv(trial_total).RT =  NaN;
         data_csv(trial_total).trial_total =  trial_total;
         data_csv(trial_total).trial_task =  trial_idx;
         data_csv(trial_total).trial_type =  'Encoding';
@@ -426,6 +423,7 @@ for block_idx = block:6
         data_csv(trial_total).response =  choice;
         data_csv(trial_total).correct_response =  NaN;
         data_csv(trial_total).response_onset =  response_time;
+        data_csv(trial_total).RT =  response_time  - elaborate_Onset;
         data_csv(trial_total).trial_total =  trial_total;
         data_csv(trial_total).trial_task =  trial_idx;
         data_csv(trial_total).trial_type =  'Encoding';
@@ -664,6 +662,7 @@ for block_idx = block:6
         data_csv(trial_total).response =  fc_choice;
         data_csv(trial_total).correct_response =  corr_resp;
         data_csv(trial_total).response_onset =  fc_response_time;
+        data_csv(trial_total).RT =  fc_response_time  - fc_Onset;
         data_csv(trial_total).trial_total =  trial_total;
         data_csv(trial_total).trial_task =  trial_idx;
         data_csv(trial_total).trial_type =  'Retrieval';
@@ -682,6 +681,7 @@ for block_idx = block:6
         data_csv(trial_total).stim_onset =  recall_Onset;
         data_csv(trial_total).stim_end =  recall_End;
         data_csv(trial_total).response =  recall_choice;
+        data_csv(trial_total).RT =  recall_choice  - recall_Onset;
         data_csv(trial_total).correct_response =  NaN;
         data_csv(trial_total).response_onset =  recall_response_time;
         data_csv(trial_total).trial_total =  trial_total;
@@ -720,9 +720,11 @@ for block_idx = block:6
     
     if block_idx ~= 0
         
-        if block_idx > 6
-        DrawFormattedText(windowPtr, ['You just finished Block: ' num2str(block_idx) newline 'To continue with the experiment press the spacebar'], 'center', 'center', black);
-        i
+        if block_idx < 6
+            DrawFormattedText(windowPtr, ['You just finished Block: ' num2str(block_idx) newline 'To continue with the experiment press the spacebar'], 'center', 'center', black);
+        elseif block_idx == 6
+            DrawFormattedText(windowPtr, ['You just finished the last block.' newline 'To finish with the experiment press the spacebar'], 'center', 'center', black);           
+        end
         
         Screen('Flip', windowPtr);
         spaceKey = KbName('space');
@@ -737,10 +739,7 @@ for block_idx = block:6
             end
         end
     end
-    
-    block_csv = struct2table(data_csv);
-    
-    
+        
     %% Loop End (here the loop ends, before saving the data
     
 

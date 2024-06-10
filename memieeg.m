@@ -38,12 +38,6 @@ rest_time = 20;
 fc_time = 3;
 retrieval_time = 3;
 
-encoding_time = 0.1;
-elaborate_time =0.1;
-rest_time = 2;
-fc_time = 0.1;
-retrieval_time = 0.1;
-
 % fixation cross limits
 low_lim = 0.5;
 upp_lim = 0.75;
