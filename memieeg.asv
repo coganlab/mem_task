@@ -38,11 +38,11 @@ rest_time = 20;
 fc_time = 3;
 retrieval_time = 3;
 
-encoding_time = 0.1;
-elaborate_time =0.1;
-rest_time = 2;
-fc_time = 0.1;
-retrieval_time = 0.1;
+encoding_time = 0.5;
+elaborate_time =0.5;
+rest_time = 3;
+fc_time = 0.5;
+retrieval_time = 0.5;
 
 % fixation cross limits
 low_lim = 0.5;
@@ -69,6 +69,8 @@ rect2 = [0 0 s4 s3];
 %% Request Subject information
 
 subID = subject;
+blockID = block;
+
 % Start Experiment
 % Set up the experiment
 c = clock; %Current date and time as date vector. [year month day hour minute seconds]
@@ -80,83 +82,19 @@ if ~exist(sub_folder)
     mkdir(sub_folder)
 end
 
-%% Start PTB
-% Set Screen Parameters
-%make sure computer has correct psychtoolbox for task
-AssertOpenGL;
-Screen('Preference', 'SkipSyncTests', 1); % <-remove me?
-%select external screen if possible
-screens = Screen('Screens');
-
-if ispc
-    dispScreen = 1; %% For Debugging
-else
-    dispScreen = max(screens);
-end
-
-% Define black and white
-black = BlackIndex(dispScreen);
-white = WhiteIndex(dispScreen);
-
-%open screen and get size parameters
-[windowPtr, rect] = Screen('OpenWindow',dispScreen,[255 255 255]); % [%[0,0,1024,768]
-Screen('BlendFunction', windowPtr, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
-% Get the size of the on screen window in pixels
-[maxWidth, maxHeight] = Screen('WindowSize', windowPtr);
-
-%get flip interval
-ifi = Screen('GetFlipInterval', windowPtr);
-
-% Get the centre coordinate of the window in pixels
-[xCenter, yCenter] = RectCenter(rect);
-
-%Set Defaults
-fontDefault = txtsize;
-Screen('TextSize',windowPtr,fontDefault);
-Screen('TextFont',windowPtr,'Arial');
-
-%cursor and keypress stuff
-%HideCursor;
-ListenChar(1);
-
-% see http://psychtoolbox.org/docs/MaxPriority. This was coded on mac osx
-Priority(MaxPriority(windowPtr));
-
-%Prepare key press listeners
-KbName('UnifyKeyNames');
-num_1 = KbName('1');
-num_2 = KbName('2');
-num_3 = KbName('3');
-num_4 = KbName('4');
-escape = KbName('ESCAPE'); %escape key (to exit experiment)
-spaceKey = KbName('space');
-RestrictKeysForKbCheck([]); %ensure all keypresses are tracked
 
 
-%% Specify circle for photodiode
-baseCircleDiam = 75;
-baseCircle = [0 0 baseCircleDiam baseCircleDiam];
-centeredCircle = CenterRectOnPointd(baseCircle, maxWidth-0.5*baseCircleDiam, 1+0.5*baseCircleDiam); %
-circleColor1 = [white white white]; % white
-circleColor2 = [black black black]; % black
-
-%% Task Timing
-% Set up the experiment
-c = clock; %Current date and time as date vector. [year month day hour minute seconds]
-time = strcat(num2str(c(1)),'_',num2str(c(2)),'_',num2str(c(3)),'_',num2str(c(4)),'_',num2str(c(5))); %makes unique filename
-taskStartTime = GetSecs; % time experiment starts
-
-counter = 0;
-
+%% Start block loop
+c = 0;
 for block_idx = block:6
     
     name2save = [subID '_MemTask_List_' list '_Block_' num2str(block_idx) '_' time '.csv'];
     name2save = fullfile(sub_folder,name2save);
     
+    
     %% Load block order from csv file
     
-    block_file = fullfile(block_data,list, [list '_0' int2str(block_idx) '.csv']);
+    block_file = fullfile(block_data,list, [list '_0' int2str(blockID) '.csv']);
     csv = readtable(block_file);
     csv = table2struct(csv);
     trial_type = {csv(:).trial_type};
@@ -212,11 +150,72 @@ for block_idx = block:6
     csv(1).recall_response =  [];
     csv(1).recall_rt =  [];
     
+    %% Start PTB
+    % Set Screen Parameters
+    %make sure computer has correct psychtoolbox for task
+    AssertOpenGL;
+    Screen('Preference', 'SkipSyncTests', 1); % <-remove me?
+    %select external screen if possible
+    screens = Screen('Screens');
+    
+    if ispc
+        dispScreen = 1; %% For Debugging
+    else
+        dispScreen = max(screens);
+    end
+    
+    % Define black and white
+    black = BlackIndex(dispScreen);
+    white = WhiteIndex(dispScreen);
+    
+    %open screen and get size parameters
+    [windowPtr, rect] = Screen('OpenWindow',dispScreen,[255 255 255]); % [%[0,0,1024,768]
+    Screen('BlendFunction', windowPtr, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
+    % Get the size of the on screen window in pixels
+    [maxWidth, maxHeight] = Screen('WindowSize', windowPtr);
+    
+    %get flip interval
+    ifi = Screen('GetFlipInterval', windowPtr);
+    
+    % Get the centre coordinate of the window in pixels
+    [xCenter, yCenter] = RectCenter(rect);
+    
+    %Set Defaults
+    fontDefault = txtsize;
+    Screen('TextSize',windowPtr,fontDefault);
+    Screen('TextFont',windowPtr,'Arial');
+    
+    %cursor and keypress stuff
+    %HideCursor;
+    ListenChar(1);
+    
+    % see http://psychtoolbox.org/docs/MaxPriority. This was coded on mac osx
+    Priority(MaxPriority(windowPtr));
+    
+    %Prepare key press listeners
+    KbName('UnifyKeyNames');
+    num_1 = KbName('1');
+    num_2 = KbName('2');
+    num_3 = KbName('3');
+    num_4 = KbName('4');
+    escape = KbName('ESCAPE'); %escape key (to exit experiment)
+    spaceKey = KbName('space');
+    RestrictKeysForKbCheck([]); %ensure all keypresses are tracked
+    
+    
+    %% Specify circle for photodiode
+    baseCircleDiam = 75;
+    baseCircle = [0 0 baseCircleDiam baseCircleDiam];
+    centeredCircle = CenterRectOnPointd(baseCircle, maxWidth-0.5*baseCircleDiam, 1+0.5*baseCircleDiam); %
+    circleColor1 = [white white white]; % white
+    circleColor2 = [black black black]; % black
+    
     %% Instructions
     dstRect = [0 0 maxWidth maxHeight];
     n_slides = 3;
     
-    if block_idx == 0
+    if block == 0
         for slide_idx = 1:n_slides
             inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.jpg']));
             inst = Screen('MakeTexture', windowPtr, inst);
@@ -241,6 +240,15 @@ for block_idx = block:6
         end
         
     end
+    
+    
+    %% Start Task
+    % Set up the experiment
+    c = clock; %Current date and time as date vector. [year month day hour minute seconds]
+    time = strcat(num2str(c(1)),'_',num2str(c(2)),'_',num2str(c(3)),'_',num2str(c(4)),'_',num2str(c(5))); %makes unique filename
+    taskStartTime = GetSecs; % time experiment starts
+    
+    
     
     %% Wait for Subject input
     DrawFormattedText(windowPtr, 'To start the experiment press the spacebar', 'center', 'center', black);
@@ -404,7 +412,7 @@ for block_idx = block:6
     %% Instructions
     dstRect = [0 0 maxWidth maxHeight];
     
-    if block_idx == 0
+    if block == 0
         for slide_idx = (4:6)
             inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.JPG']));
             inst = Screen('MakeTexture', windowPtr, inst);
@@ -630,7 +638,7 @@ for block_idx = block:6
     %% Instructions
     dstRect = [0 0 maxWidth maxHeight];
     
-    if block_idx == 0
+    if block == 0
         for slide_idx = 8
             inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.JPG']));
             inst = Screen('MakeTexture', windowPtr, inst);
@@ -650,7 +658,7 @@ for block_idx = block:6
         end
     end
     
-    if block_idx ~= 0
+    if block ~= 0
         DrawFormattedText(windowPtr, ['You just finished Block: ' num2str(block_idx)  '. To continue with the experiment press the spacebar'], 'center', 'center', black);
         Screen('Flip', windowPtr);
         spaceKey = KbName('space');
@@ -671,18 +679,17 @@ for block_idx = block:6
     
     %% Loop End (here the loop ends, before saving the data
     
-    if block_idx == 0 | counter == 0
+    if block_idx = 0
         all_data = block_csv;
         writetable(all_data,name2save);
     else
-        all_data = cat(1,all_data,block_csv);
+        all_data = cat(all_data,block_csv);
         writetable(all_data,name2save);
     end
-    
-    counter = counter+1;
+    c = c+1
 end
-
-Screen('CloseAll');
-
+    Screen('CloseAll');
+    
+    
 end
 
