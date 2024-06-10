@@ -1,0 +1,27 @@
+object,target,lure1,lure2,baseline,trial_type,retrieval_type,stim_onset,stim_end,response,correct_response,response_onset,trial_total,trial_task,retrival_type,subject_ID,list,block
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,Encoding,Encoding,16.8041380000068,16.8880278000142,NaN,NaN,NaN,1,1,NaN,0,S01,0
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,Encoding,Encoding,17.6370988000417,17.72050210007,,NaN,,2,1,NaN,0,S01,0
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,Encoding,Encoding,18.2371540000895,18.3205266000004,NaN,NaN,NaN,3,2,NaN,0,S01,0
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,Encoding,Encoding,18.8704729001038,18.9536951000337,,NaN,,4,2,NaN,0,S01,0
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,Encoding,Encoding,19.4704533000477,19.553821700043,NaN,NaN,NaN,5,3,NaN,0,S01,0
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,Encoding,Lure,20.3086862000637,20.3870154001052,,NaN,,6,3,NaN,0,S01,0
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,Encoding,Lure,21.0706022999948,21.1542427000822,NaN,NaN,NaN,7,4,NaN,0,S01,0
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,Encoding,Retrieval,21.9037242000923,21.9869444000069,,NaN,,8,4,NaN,0,S01,0
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,Encoding,Lure,22.5541478000814,22.6381054000231,NaN,NaN,NaN,9,5,NaN,0,S01,0
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,Encoding,Retrieval,23.2779030000092,23.3536101999925,,NaN,,10,5,NaN,0,S01,0
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,Retrieval,Retrieval,31.3280415000627,31.4033018000191,,4,,11,1,Lure,0,S01,0
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,Retrieval,Retrieval,32.1595713000279,32.2367217000574,,NaN,,12,1,Lure,0,S01,0
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,Retrieval,Retrieval,32.7869196000975,32.8702618000098,,4,,13,2,Lure,0,S01,0
+,,,,,Retrieval,,33.4102075000992,33.486843700055,,NaN,,14,2,Lure,0,S01,0
+,,,,,Retrieval,,34.1722845000913,34.2532273000106,,2,,15,3,Retrieval,0,S01,0
+,,,,,Retrieval,,34.9611374000087,35.036800300004,,NaN,,16,3,Retrieval,0,S01,0
+,,,,,Retrieval,,35.5884686000645,35.6699059000239,,4,,17,4,Lure,0,S01,0
+,,,,,Retrieval,,36.2197146000108,36.3030218000058,,NaN,,18,4,Lure,0,S01,0
+,,,,,Retrieval,,36.8228816000046,36.9028998001013,,3,,19,5,Retrieval,0,S01,0
+,,,,,Retrieval,,37.4362230000552,37.5195999999996,,NaN,,20,5,Retrieval,0,S01,0
+,,,,,Retrieval,,38.1528831000905,38.2362102000043,,1,,21,6,Retrieval,0,S01,0
+,,,,,Retrieval,,38.8365348000079,38.919697000063,,NaN,,22,6,Retrieval,0,S01,0
+,,,,,Retrieval,,39.4406396000413,39.5197148000589,,3,,23,7,Retrieval,0,S01,0
+,,,,,Retrieval,,40.1480408000061,40.2194268000312,,NaN,,24,7,Retrieval,0,S01,0
+,,,,,Retrieval,,40.7863379000919,40.8694858000381,,2,,25,8,Retrieval,0,S01,0
+,,,,,Retrieval,,41.5033109000651,41.5859876000322,,NaN,,26,8,Retrieval,0,S01,0

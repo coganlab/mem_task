@@ -1,0 +1,27 @@
+object,target,lure1,lure2,baseline,stim_onset,stim_end,response,correct_response,response_onset,RT,subject_ID,block,trial_total,trial_task,trial_type,retrival_type,list
+snowflake,Angelina Jolie,NaN,NaN,0.61,17.225148800062,17.3047865000553,NaN,NaN,NaN,,D12,0,1,1,Encoding,NaN,S01
+snowflake,Angelina Jolie,NaN,NaN,0.61,18.0526485000737,18.1102426999714,,NaN,,,D12,0,2,1,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,18.6227374000009,18.7048570000334,NaN,NaN,NaN,,D12,0,3,2,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,19.4650111000519,19.5371888000518,,NaN,,,D12,0,4,2,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,20.0549614999909,20.1378247999819,NaN,NaN,NaN,,D12,0,5,3,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,20.697381200036,20.7706485000672,,NaN,,,D12,0,6,3,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,21.438130900031,21.5210634999676,NaN,NaN,NaN,,D12,0,7,4,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,22.2784826999996,22.3536724000005,,NaN,,,D12,0,8,4,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,22.9210680000251,23.0043169000419,NaN,NaN,NaN,,D12,0,9,5,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,23.6746132000117,23.7537275999784,,NaN,,,D12,0,10,5,Encoding,NaN,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,31.3948496000376,31.4698859000346,,4,,,D12,0,11,1,Retrieval,Lure,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,32.2308421999915,32.3032963000005,,NaN,,,D12,0,12,1,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,32.8590709000127,32.9366647000425,,4,,,D12,0,13,2,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,33.6948330000741,33.7697904000524,,NaN,,,D12,0,14,2,Retrieval,Lure,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,34.4363025999628,34.5196728999726,,2,,,D12,0,15,3,Retrieval,Retrieval,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,35.1365127000026,35.2198807999957,,NaN,,,D12,0,16,3,Retrieval,Retrieval,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,35.7776648000581,35.8532545999624,,4,,,D12,0,17,4,Retrieval,Lure,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,36.5266563000623,36.6030606999993,,NaN,,,D12,0,18,4,Retrieval,Lure,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,37.1200878999662,37.2031041000737,,1,,,D12,0,19,5,Retrieval,Retrieval,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,37.8883541000541,37.969810300041,,NaN,,,D12,0,20,5,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,38.5912946000462,38.6697843000293,,3,,,D12,0,21,6,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,39.3463145999704,39.4195684000151,,NaN,,,D12,0,22,6,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,39.9400487999665,40.0197303000605,,2,,,D12,0,23,7,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,40.6134007000364,40.686186100007,,NaN,,,D12,0,24,7,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,41.2612821999937,41.3361499999883,,1,,,D12,0,25,8,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,42.0215924000368,42.1027067999821,,NaN,,,D12,0,26,8,Retrieval,Retrieval,S01

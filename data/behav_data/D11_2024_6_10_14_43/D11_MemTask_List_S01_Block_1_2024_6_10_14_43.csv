@@ -1,0 +1,117 @@
+object,target,lure1,lure2,baseline,stim_onset,stim_end,response,correct_response,response_onset,RT,subject_ID,block,trial_total,trial_task,trial_type,retrival_type,list
+snowflake,Angelina Jolie,NaN,NaN,0.61,16.9403276999947,17.0238024999853,NaN,NaN,NaN,,D11,0,1,1,Encoding,NaN,S01
+snowflake,Angelina Jolie,NaN,NaN,0.61,17.7670041000238,17.8237116000382,,NaN,,,D11,0,2,1,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,18.3405011000577,18.4238614999922,NaN,NaN,NaN,,D11,0,3,2,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,19.1791596000548,19.2570066000335,,NaN,,,D11,0,4,2,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,19.7745863000164,19.8575524000917,NaN,NaN,NaN,,D11,0,5,3,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,20.4072757000104,20.4902276000939,,NaN,,,D11,0,6,3,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,21.1744623000268,21.2568401000462,NaN,NaN,NaN,,D11,0,7,4,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,22.0138913000701,22.0901355000678,,NaN,,,D11,0,8,4,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,22.6576670000795,22.741098400089,NaN,NaN,NaN,,D11,0,9,5,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,23.4320002000313,23.5069034000626,,NaN,,,D11,0,10,5,Encoding,NaN,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,30.5557341000531,30.6232852000976,,4,,,D11,0,11,1,Retrieval,Lure,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,31.3854021000443,31.4563709000358,,NaN,,,D11,0,12,1,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,32.0117581000086,32.0898196999915,,4,,,D11,0,13,2,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,32.8441901000915,32.9229266000912,,NaN,,,D11,0,14,2,Retrieval,Lure,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,33.6064841999905,33.6898280000314,,2,,,D11,0,15,3,Retrieval,Retrieval,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,34.3363645999925,34.4062858000398,,NaN,,,D11,0,16,3,Retrieval,Retrieval,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,34.9610147000058,35.0397597000701,,4,,,D11,0,17,4,Retrieval,Lure,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,35.7322016999824,35.8064232000615,,NaN,,,D11,0,18,4,Retrieval,Lure,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,36.3279868999962,36.4066099000629,,1,,,D11,0,19,5,Retrieval,Retrieval,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,37.0959578000475,37.173198100063,,NaN,,,D11,0,20,5,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,37.8146016000537,37.8896632000105,,3,,,D11,0,21,6,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,38.5837318000849,38.6560843000188,,NaN,,,D11,0,22,6,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,39.1766866000835,39.2561791000189,,2,,,D11,0,23,7,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,39.8497825000668,39.9226175000658,,NaN,,,D11,0,24,7,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,40.4925988999894,40.5727737999987,,1,,,D11,0,25,8,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,41.2657244000584,41.3392372000962,,NaN,,,D11,0,26,8,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,NaN,NaN,0.61,16.9403276999947,17.0238024999853,NaN,NaN,NaN,,D11,0,1,1,Encoding,NaN,S01
+snowflake,Angelina Jolie,NaN,NaN,0.61,17.7670041000238,17.8237116000382,,NaN,,,D11,0,2,1,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,18.3405011000577,18.4238614999922,NaN,NaN,NaN,,D11,0,3,2,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,19.1791596000548,19.2570066000335,,NaN,,,D11,0,4,2,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,19.7745863000164,19.8575524000917,NaN,NaN,NaN,,D11,0,5,3,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,20.4072757000104,20.4902276000939,,NaN,,,D11,0,6,3,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,21.1744623000268,21.2568401000462,NaN,NaN,NaN,,D11,0,7,4,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,22.0138913000701,22.0901355000678,,NaN,,,D11,0,8,4,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,22.6576670000795,22.741098400089,NaN,NaN,NaN,,D11,0,9,5,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,23.4320002000313,23.5069034000626,,NaN,,,D11,0,10,5,Encoding,NaN,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,30.5557341000531,30.6232852000976,,4,,,D11,0,11,1,Retrieval,Lure,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,31.3854021000443,31.4563709000358,,NaN,,,D11,0,12,1,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,32.0117581000086,32.0898196999915,,4,,,D11,0,13,2,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,32.8441901000915,32.9229266000912,,NaN,,,D11,0,14,2,Retrieval,Lure,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,33.6064841999905,33.6898280000314,,2,,,D11,0,15,3,Retrieval,Retrieval,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,34.3363645999925,34.4062858000398,,NaN,,,D11,0,16,3,Retrieval,Retrieval,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,34.9610147000058,35.0397597000701,,4,,,D11,0,17,4,Retrieval,Lure,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,35.7322016999824,35.8064232000615,,NaN,,,D11,0,18,4,Retrieval,Lure,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,36.3279868999962,36.4066099000629,,1,,,D11,0,19,5,Retrieval,Retrieval,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,37.0959578000475,37.173198100063,,NaN,,,D11,0,20,5,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,37.8146016000537,37.8896632000105,,3,,,D11,0,21,6,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,38.5837318000849,38.6560843000188,,NaN,,,D11,0,22,6,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,39.1766866000835,39.2561791000189,,2,,,D11,0,23,7,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,39.8497825000668,39.9226175000658,,NaN,,,D11,0,24,7,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,40.4925988999894,40.5727737999987,,1,,,D11,0,25,8,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,41.2657244000584,41.3392372000962,,NaN,,,D11,0,26,8,Retrieval,Retrieval,S01
+dragon_statue,Queen Elizabeth,NaN,NaN,0.55,55.1723577000666,55.2557455000933,NaN,NaN,NaN,,D11,1,27,1,Encoding,NaN,S01
+dragon_statue,Queen Elizabeth,NaN,NaN,0.55,55.8745312000392,55.938516400056,,NaN,,,D11,1,28,1,Encoding,NaN,S01
+cash_register,John Kennedy,NaN,NaN,0.65,56.6059538000263,56.6894603000255,NaN,NaN,NaN,,D11,1,29,2,Encoding,NaN,S01
+cash_register,John Kennedy,NaN,NaN,0.65,57.4464252000907,57.5217941000592,,NaN,,,D11,1,30,2,Encoding,NaN,S01
+swimsuit,Hugh Grant,NaN,NaN,0.56,58.1058669000631,58.1890930000227,NaN,NaN,NaN,,D11,1,31,3,Encoding,NaN,S01
+swimsuit,Hugh Grant,NaN,NaN,0.56,58.7283562000375,58.8052348000929,,NaN,,,D11,1,32,3,Encoding,NaN,S01
+saltshaker,Zac Effron,NaN,NaN,0.63,59.4560376000591,59.5392532000551,NaN,NaN,NaN,,D11,1,33,4,Encoding,NaN,S01
+saltshaker,Zac Effron,NaN,NaN,0.63,60.1825804000255,60.2550822000485,,NaN,,,D11,1,34,4,Encoding,NaN,S01
+flower_pot,Brad Pitt,NaN,NaN,0.65,60.9226613000501,61.0057449000888,NaN,NaN,NaN,,D11,1,35,5,Encoding,NaN,S01
+flower_pot,Brad Pitt,NaN,NaN,0.65,61.6317037000554,61.70487710007,,NaN,,,D11,1,36,5,Encoding,NaN,S01
+yarn,Dwayne Johnson,NaN,NaN,0.52,62.2382790000411,62.3226222000085,NaN,NaN,NaN,,D11,1,37,6,Encoding,NaN,S01
+yarn,Dwayne Johnson,NaN,NaN,0.52,63.0313613000326,63.1049710999941,,NaN,,,D11,1,38,6,Encoding,NaN,S01
+pot_of_gold,Drake Graham,NaN,NaN,0.63,63.7557994000381,63.8392993999878,NaN,NaN,NaN,,D11,1,39,7,Encoding,NaN,S01
+pot_of_gold,Drake Graham,NaN,NaN,0.63,64.5646082999883,64.6380147000309,,NaN,,,D11,1,40,7,Encoding,NaN,S01
+lantern,Morgan Freeman,NaN,NaN,0.72,65.3724057000363,65.4554945999989,NaN,NaN,NaN,,D11,1,41,8,Encoding,NaN,S01
+lantern,Morgan Freeman,NaN,NaN,0.72,66.0303649000125,66.1046584000578,,NaN,,,D11,1,42,8,Encoding,NaN,S01
+razor,Paris Hilton,NaN,NaN,0.74,66.8555808000965,66.9392894000048,NaN,NaN,NaN,,D11,1,43,9,Encoding,NaN,S01
+razor,Paris Hilton,NaN,NaN,0.74,67.5806543000508,67.6547406000318,,NaN,,,D11,1,44,9,Encoding,NaN,S01
+money,Condoliza Rice,NaN,NaN,0.53,68.2055571000092,68.2891185000772,NaN,NaN,NaN,,D11,1,45,10,Encoding,NaN,S01
+money,Condoliza Rice,NaN,NaN,0.53,68.9327301000012,69.0047781000612,,NaN,,,D11,1,46,10,Encoding,NaN,S01
+crowbar,Chris Hemsworth,NaN,NaN,0.55,69.5722787000705,69.6552301000338,NaN,NaN,NaN,,D11,1,47,11,Encoding,NaN,S01
+crowbar,Chris Hemsworth,NaN,NaN,0.55,70.338066300028,70.4213650000747,,NaN,,,D11,1,48,11,Encoding,NaN,S01
+chainsaw,Mark Walberg,NaN,NaN,0.64,71.07190119999,71.155468699988,NaN,NaN,NaN,,D11,1,49,12,Encoding,NaN,S01
+chainsaw,Mark Walberg,NaN,NaN,0.64,71.8656564999837,71.9378708000295,,NaN,,,D11,1,50,12,Encoding,NaN,S01
+totem_pole,Charlize Therone,NaN,NaN,0.75,72.7052494999953,72.7888976000249,NaN,NaN,NaN,,D11,1,51,13,Encoding,NaN,S01
+totem_pole,Charlize Therone,NaN,NaN,0.75,73.4992779000895,73.5709551000036,,NaN,,,D11,1,52,13,Encoding,NaN,S01
+pocket_watch,Robert Pattinson,NaN,NaN,0.59,74.1721397000365,74.2549483000766,NaN,NaN,NaN,,D11,1,53,14,Encoding,NaN,S01
+pocket_watch,Robert Pattinson,NaN,NaN,0.59,74.8429873000132,74.9209587000078,,NaN,,,D11,1,54,14,Encoding,NaN,S01
+pot_of_gold,Drake Graham,Hugh Grant,Zac Effron,0.63,77.5809055999853,77.6542579000816,,3,,,D11,1,55,1,Retrieval,Retrieval,S01
+pot_of_gold,Drake Graham,Hugh Grant,Zac Effron,0.63,78.2154985000379,78.2875371000264,,NaN,,,D11,1,56,1,Retrieval,Retrieval,S01
+trumpet,Charlize Therone,Condoliza Rice,Zac Effron,0.58,78.8916628999868,78.9707650000928,,4,,,D11,1,57,2,Retrieval,Lure,S01
+trumpet,Charlize Therone,Condoliza Rice,Zac Effron,0.58,79.6454162000446,79.7208100000862,,NaN,,,D11,1,58,2,Retrieval,Lure,S01
+flower_pot,Brad Pitt,Zac Effron,Queen Elizabeth,0.65,80.3935204000445,80.4709608000703,,1,,,D11,1,59,3,Retrieval,Retrieval,S01
+flower_pot,Brad Pitt,Zac Effron,Queen Elizabeth,0.65,81.1290478000883,81.2043017999968,,NaN,,,D11,1,60,3,Retrieval,Retrieval,S01
+swimsuit,Hugh Grant,Brad Pitt,Zac Effron,0.56,81.7933579999954,81.8706631000387,,1,,,D11,1,61,4,Retrieval,Retrieval,S01
+swimsuit,Hugh Grant,Brad Pitt,Zac Effron,0.56,82.5296498000389,82.6040119000245,,NaN,,,D11,1,62,4,Retrieval,Retrieval,S01
+yarn,Dwayne Johnson,Zac Effron,Chris Hemsworth,0.52,83.1419192000758,83.2205165000632,,1,,,D11,1,63,5,Retrieval,Retrieval,S01
+yarn,Dwayne Johnson,Zac Effron,Chris Hemsworth,0.52,83.9628792000003,84.0371661999961,,NaN,,,D11,1,64,5,Retrieval,Retrieval,S01
+stroller,Condoliza Rice,Charlize Therone,Drake Graham,0.57,84.6267638000427,84.7039145000745,,4,,,D11,1,65,6,Retrieval,Lure,S01
+stroller,Condoliza Rice,Charlize Therone,Drake Graham,0.57,85.4608800000278,85.5372079000808,,NaN,,,D11,1,66,6,Retrieval,Lure,S01
+saltshaker,Zac Effron,Brad Pitt,Charlize Therone,0.63,86.1927433999954,86.2705002999865,,3,,,D11,1,67,7,Retrieval,Retrieval,S01
+saltshaker,Zac Effron,Brad Pitt,Charlize Therone,0.63,86.9441883000545,87.0205849000486,,NaN,,,D11,1,68,7,Retrieval,Retrieval,S01
+dragon_statue,Queen Elizabeth,Hugh Grant,Brad Pitt,0.55,87.5936205000617,87.67062790005,,2,,,D11,1,69,8,Retrieval,Retrieval,S01
+dragon_statue,Queen Elizabeth,Hugh Grant,Brad Pitt,0.55,88.3458758000052,88.4204024000792,,NaN,,,D11,1,70,8,Retrieval,Retrieval,S01
+cash_register,John Kennedy,Zac Effron,Queen Elizabeth,0.65,89.094538000063,89.1705374000594,,2,,,D11,1,71,9,Retrieval,Retrieval,S01
+cash_register,John Kennedy,Zac Effron,Queen Elizabeth,0.65,89.8788366999943,89.9539042999968,,NaN,,,D11,1,72,9,Retrieval,Retrieval,S01
+lantern,Morgan Freeman,Condoliza Rice,Chris Hemsworth,0.72,90.6892618000275,90.7706992999883,,3,,,D11,1,73,10,Retrieval,Retrieval,S01
+lantern,Morgan Freeman,Condoliza Rice,Chris Hemsworth,0.72,91.3037706000032,91.3871015000623,,NaN,,,D11,1,74,10,Retrieval,Retrieval,S01
+pick,Robert Pattinson,Hugh Grant,Mark Walberg,0.63,92.0370912000071,92.1204235000769,,4,,,D11,1,75,11,Retrieval,Lure,S01
+pick,Robert Pattinson,Hugh Grant,Mark Walberg,0.63,92.8703807999846,92.9537416000385,,NaN,,,D11,1,76,11,Retrieval,Lure,S01
+money,Condoliza Rice,John Kennedy,Chris Hemsworth,0.53,93.5086285000434,93.5869080000557,,1,,,D11,1,77,12,Retrieval,Retrieval,S01
+money,Condoliza Rice,John Kennedy,Chris Hemsworth,0.53,94.1151157000568,94.1866494000424,,NaN,,,D11,1,78,12,Retrieval,Retrieval,S01
+crowbar,Chris Hemsworth,Morgan Freeman,Brad Pitt,0.55,94.7535108000739,94.8368498000782,,2,,,D11,1,79,13,Retrieval,Retrieval,S01
+crowbar,Chris Hemsworth,Morgan Freeman,Brad Pitt,0.55,95.4454706000397,95.520059100003,,NaN,,,D11,1,80,13,Retrieval,Retrieval,S01
+beret,Robert Pattinson,Chris Hemsworth,Zac Effron,0.61,96.1585534000769,96.2369075000752,,4,,,D11,1,81,14,Retrieval,Lure,S01
+beret,Robert Pattinson,Chris Hemsworth,Zac Effron,0.61,96.8295540000545,96.9033283999888,,NaN,,,D11,1,82,14,Retrieval,Lure,S01
+razor,Paris Hilton,Brad Pitt,Chris Hemsworth,0.74,97.6572612000164,97.736716400017,,1,,,D11,1,83,15,Retrieval,Retrieval,S01
+razor,Paris Hilton,Brad Pitt,Chris Hemsworth,0.74,98.3732852999819,98.4530929999892,,NaN,,,D11,1,84,15,Retrieval,Retrieval,S01
+chainsaw,Mark Walberg,Chris Hemsworth,Hugh Grant,0.64,99.1097598000197,99.186663200031,,1,,,D11,1,85,16,Retrieval,Retrieval,S01
+chainsaw,Mark Walberg,Chris Hemsworth,Hugh Grant,0.64,99.7447695999872,99.8200475000776,,NaN,,,D11,1,86,16,Retrieval,Retrieval,S01
+pocket_watch,Robert Pattinson,Dwayne Johnson,Hugh Grant,0.59,100.425121700042,100.503206300084,,2,,,D11,1,87,17,Retrieval,Retrieval,S01
+pocket_watch,Robert Pattinson,Dwayne Johnson,Hugh Grant,0.59,101.036647000001,101.119814700098,,NaN,,,D11,1,88,17,Retrieval,Retrieval,S01
+totem_pole,Charlize Therone,John Kennedy,Queen Elizabeth,0.75,101.892787700053,101.969742999994,,2,,,D11,1,89,18,Retrieval,Retrieval,S01
+totem_pole,Charlize Therone,John Kennedy,Queen Elizabeth,0.75,102.49504040007,102.56970750005,,NaN,,,D11,1,90,18,Retrieval,Retrieval,S01

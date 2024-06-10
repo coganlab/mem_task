@@ -68,17 +68,37 @@ rect2 = [0 0 s4 s3];
 
 %% Request Subject information
 
-subID = subject;
 % Start Experiment
 % Set up the experiment
 c = clock; %Current date and time as date vector. [year month day hour minute seconds]
 time = strcat(num2str(c(1)),'_',num2str(c(2)),'_',num2str(c(3)),'_',num2str(c(4)),'_',num2str(c(5))); %makes unique filename
 
 % Make Folder to store subjects data
-sub_folder = fullfile(save_data,[subID '_' time]);
+sub_folder = fullfile(save_data,[subject '_' time]);
 if ~exist(sub_folder)
     mkdir(sub_folder)
 end
+
+%% Structure to save the data
+% Add fields to the csv to store the data
+
+data_csv(1).object =  [];
+data_csv(1).target =  [];
+data_csv(1).lure1 =  [];
+data_csv(1).lure2 =  [];
+data_csv(1).baseline =  [];
+data_csv(1).stim_onset =  [];
+data_csv(1).stim_end =  [];
+data_csv(1).response =  [];
+data_csv(1).correct_response =  [];
+data_csv(1).response_onset =  [];
+data_csv(1).RT =  [];
+data_csv(1).subject_ID =  [];
+data_csv(1).block =  [];
+data_csv(1).trial_total =  [];
+data_csv(1).trial_task =  [];
+data_csv(1).trial_type =  [];
+data_csv(1).retrival_type =  [];
 
 %% Start PTB
 % Set Screen Parameters
@@ -148,10 +168,11 @@ time = strcat(num2str(c(1)),'_',num2str(c(2)),'_',num2str(c(3)),'_',num2str(c(4)
 taskStartTime = GetSecs; % time experiment starts
 
 counter = 0;
+trial_total = 1;
 
 for block_idx = block:6
     
-    name2save = [subID '_MemTask_List_' list '_Block_' num2str(block_idx) '_' time '.csv'];
+    name2save = [subject '_MemTask_List_' list '_Block_' num2str(block_idx) '_' time '.csv'];
     name2save = fullfile(sub_folder,name2save);
     
     %% Load block order from csv file
@@ -195,22 +216,6 @@ for block_idx = block:6
     ret_baseline_order = {csv(:).baseline};
     ret_baseline_order = cell2mat(ret_baseline_order((n_encoding + 1):end)');
     
-    %% Add fields to the csv to store the data
-    
-    csv(1).encoding_onset =  [];
-    csv(1).encoding_end =  [];
-    csv(1).elaborate_onset=  [];
-    csv(1).elaborate_end =  [];
-    csv(1).elaborate_response =  [];
-    csv(1).elaborate_rt =  [];
-    csv(1).fc_onset =  [];
-    csv(1).fc_end =  [];
-    csv(1).fc_response =  [];
-    csv(1).fc_rt =  [];
-    csv(1).recall_onset=  [];
-    csv(1).recall_end =  [];
-    csv(1).recall_response =  [];
-    csv(1).recall_rt =  [];
     
     %% Instructions
     dstRect = [0 0 maxWidth maxHeight];
@@ -391,12 +396,48 @@ for block_idx = block:6
         response_time = responses(row,2) - taskStartTime;
         
         % save data
-        csv(trial_idx).encoding_onset =  encoding_Onset;
-        csv(trial_idx).encoding_end =  encoding_End;
-        csv(trial_idx).elaborate_onset=  elaborate_Onset;
-        csv(trial_idx).elaborate_end =  elaborate_End;
-        csv(trial_idx).elaborate_response =  choice;
-        csv(trial_idx).elaborate_rt =  response_time;
+        data_csv(trial_total).object =  enc_object_order{trial_idx,1};
+        data_csv(trial_total).target =  enc_face_order{trial_idx,1};
+        data_csv(trial_total).lure1 =  NaN;
+        data_csv(trial_total).lure2 =  NaN;
+        data_csv(trial_total).baseline =  baseline_time;
+        data_csv(trial_total).stim_onset =  encoding_Onset;
+        data_csv(trial_total).stim_end =  encoding_End;
+        data_csv(trial_total).response =  NaN;
+        data_csv(trial_total).correct_response =  NaN;
+        data_csv(trial_total).response_onset =  NaN;
+        data_csv(trial_total).RT =  NaN;
+        data_csv(trial_total).trial_total =  trial_total;
+        data_csv(trial_total).trial_task =  trial_idx;
+        data_csv(trial_total).trial_type =  'Encoding';
+        data_csv(trial_total).retrival_type =  NaN;
+        data_csv(trial_total).subject_ID =  subject;
+        data_csv(trial_total).list =  list;
+        data_csv(trial_total).block =  block_idx;
+        
+        trial_total = trial_total + 1;
+        
+        data_csv(trial_total).object =  enc_object_order{trial_idx,1};
+        data_csv(trial_total).target =  enc_face_order{trial_idx,1};
+        data_csv(trial_total).lure1 =  NaN;
+        data_csv(trial_total).lure2 =  NaN;
+        data_csv(trial_total).baseline =  baseline_time;
+        data_csv(trial_total).stim_onset =  elaborate_Onset;
+        data_csv(trial_total).stim_end =  elaborate_End;
+        data_csv(trial_total).response =  choice;
+        data_csv(trial_total).correct_response =  NaN;
+        data_csv(trial_total).response_onset =  response_time;
+        data_csv(trial_total).RT =  response_time  - elaborate_Onset;
+        data_csv(trial_total).trial_total =  trial_total;
+        data_csv(trial_total).trial_task =  trial_idx;
+        data_csv(trial_total).trial_type =  'Encoding';
+        data_csv(trial_total).retrival_type =  NaN;
+        data_csv(trial_total).subject_ID =  subject;
+        data_csv(trial_total).list =  list;
+        data_csv(trial_total).block =  block_idx;
+        trial_total = trial_total + 1;
+
+        
     end
     
     
@@ -550,11 +591,6 @@ for block_idx = block:6
         fc_choice = KbName(responses(row,3));
         fc_response_time = responses(row,2) - taskStartTime;
         
-        csv(row_iterator).fc_onset =  fc_Onset;
-        csv(row_iterator).fc_end =  fc_End;
-        csv(row_iterator).fc_response =  fc_choice;
-        csv(row_iterator).fc_rt =  fc_response_time;
-        
         % Fixation Cross
         fix_duration = round( low_lim + (upp_lim - low_lim) * rand,2);
         stimFlipFrames = round(fix_duration/ifi);
@@ -620,10 +656,46 @@ for block_idx = block:6
         
         % save data
         
-        csv(row_iterator).recall_onset=  recall_Onset;
-        csv(row_iterator).recall_end =  recall_End;
-        csv(row_iterator).recall_response =  recall_choice;
-        csv(row_iterator).recall_rt =  recall_response_time;
+        data_csv(trial_total).object =  ret_object_order{trial_idx,1};
+        data_csv(trial_total).target = trial_target;
+        data_csv(trial_total).lure1 =  trial_lure1;
+        data_csv(trial_total).lure2 =  trial_lure2;
+        data_csv(trial_total).baseline =  baseline_time;
+        data_csv(trial_total).stim_onset =  fc_Onset;
+        data_csv(trial_total).stim_end =  fc_End;
+        data_csv(trial_total).response =  fc_choice;
+        data_csv(trial_total).correct_response =  corr_resp;
+        data_csv(trial_total).response_onset =  fc_response_time;
+        data_csv(trial_total).RT =  fc_response_time  - fc_Onset;
+        data_csv(trial_total).trial_total =  trial_total;
+        data_csv(trial_total).trial_task =  trial_idx;
+        data_csv(trial_total).trial_type =  'Retrieval';
+        data_csv(trial_total).retrival_type =  retrieval_type;
+        data_csv(trial_total).subject_ID =  subject;
+        data_csv(trial_total).list =  list;
+        data_csv(trial_total).block =  block_idx;
+        
+        trial_total = trial_total + 1;
+        
+        data_csv(trial_total).object =  ret_object_order{trial_idx,1};
+        data_csv(trial_total).target = trial_target;
+        data_csv(trial_total).lure1 =  trial_lure1;
+        data_csv(trial_total).lure2 =  trial_lure2;
+        data_csv(trial_total).baseline =  baseline_time;
+        data_csv(trial_total).stim_onset =  recall_Onset;
+        data_csv(trial_total).stim_end =  recall_End;
+        data_csv(trial_total).response =  recall_choice;
+        data_csv(trial_total).RT =  recall_choice  - recall_Onset;
+        data_csv(trial_total).correct_response =  NaN;
+        data_csv(trial_total).response_onset =  recall_response_time;
+        data_csv(trial_total).trial_total =  trial_total;
+        data_csv(trial_total).trial_task =  trial_idx;
+        data_csv(trial_total).trial_type =  'Retrieval';
+        data_csv(trial_total).retrival_type =  retrieval_type;
+        data_csv(trial_total).subject_ID =  subject;
+        data_csv(trial_total).list =  list;
+        data_csv(trial_total).block =  block_idx;
+        trial_total = trial_total + 1;
         
     end
     
@@ -651,7 +723,13 @@ for block_idx = block:6
     end
     
     if block_idx ~= 0
-        DrawFormattedText(windowPtr, ['You just finished Block: ' num2str(block_idx)  '. To continue with the experiment press the spacebar'], 'center', 'center', black);
+        
+        if block_idx < 6
+            DrawFormattedText(windowPtr, ['You just finished Block: ' num2str(block_idx) newline 'To continue with the experiment press the spacebar'], 'center', 'center', black);
+        elseif block_idx == 6
+            DrawFormattedText(windowPtr, ['You just finished the last block.' newline 'To finish with the experiment press the spacebar'], 'center', 'center', black);           
+        end
+        
         Screen('Flip', windowPtr);
         spaceKey = KbName('space');
         
@@ -665,20 +743,12 @@ for block_idx = block:6
             end
         end
     end
-    
-    block_csv = struct2table(csv);
-    
-    
+        
     %% Loop End (here the loop ends, before saving the data
     
-    if block_idx == 0 | counter == 0
-        all_data = block_csv;
-        writetable(all_data,name2save);
-    else
-        all_data = cat(1,all_data,block_csv);
-        writetable(all_data,name2save);
-    end
-    
+
+    writetable(struct2table(data_csv),name2save);
+
     counter = counter+1;
 end
 

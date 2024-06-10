@@ -1,0 +1,347 @@
+object,target,lure1,lure2,baseline,stim_onset,stim_end,response,correct_response,response_onset,RT,subject_ID,block,trial_total,trial_task,trial_type,retrival_type,list
+snowflake,Angelina Jolie,NaN,NaN,0.61,17.225148800062,17.3047865000553,NaN,NaN,NaN,,D12,0,1,1,Encoding,NaN,S01
+snowflake,Angelina Jolie,NaN,NaN,0.61,18.0526485000737,18.1102426999714,,NaN,,,D12,0,2,1,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,18.6227374000009,18.7048570000334,NaN,NaN,NaN,,D12,0,3,2,Encoding,NaN,S01
+whistle,Bruce Willis,NaN,NaN,0.5,19.4650111000519,19.5371888000518,,NaN,,,D12,0,4,2,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,20.0549614999909,20.1378247999819,NaN,NaN,NaN,,D12,0,5,3,Encoding,NaN,S01
+armor,Daniel Craig,NaN,NaN,0.5,20.697381200036,20.7706485000672,,NaN,,,D12,0,6,3,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,21.438130900031,21.5210634999676,NaN,NaN,NaN,,D12,0,7,4,Encoding,NaN,S01
+violin,Lady Diana,NaN,NaN,0.66,22.2784826999996,22.3536724000005,,NaN,,,D12,0,8,4,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,22.9210680000251,23.0043169000419,NaN,NaN,NaN,,D12,0,9,5,Encoding,NaN,S01
+sarcophagus,Robert De Niro,NaN,NaN,0.55,23.6746132000117,23.7537275999784,,NaN,,,D12,0,10,5,Encoding,NaN,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,31.3948496000376,31.4698859000346,,4,,,D12,0,11,1,Retrieval,Lure,S01
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,32.2308421999915,32.3032963000005,,NaN,,,D12,0,12,1,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,32.8590709000127,32.9366647000425,,4,,,D12,0,13,2,Retrieval,Lure,S01
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,33.6948330000741,33.7697904000524,,NaN,,,D12,0,14,2,Retrieval,Lure,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,34.4363025999628,34.5196728999726,,2,,,D12,0,15,3,Retrieval,Retrieval,S01
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,35.1365127000026,35.2198807999957,,NaN,,,D12,0,16,3,Retrieval,Retrieval,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,35.7776648000581,35.8532545999624,,4,,,D12,0,17,4,Retrieval,Lure,S01
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,36.5266563000623,36.6030606999993,,NaN,,,D12,0,18,4,Retrieval,Lure,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,37.1200878999662,37.2031041000737,,1,,,D12,0,19,5,Retrieval,Retrieval,S01
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,37.8883541000541,37.969810300041,,NaN,,,D12,0,20,5,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,38.5912946000462,38.6697843000293,,3,,,D12,0,21,6,Retrieval,Retrieval,S01
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,39.3463145999704,39.4195684000151,,NaN,,,D12,0,22,6,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,39.9400487999665,40.0197303000605,,2,,,D12,0,23,7,Retrieval,Retrieval,S01
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,40.6134007000364,40.686186100007,,NaN,,,D12,0,24,7,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,41.2612821999937,41.3361499999883,,1,,,D12,0,25,8,Retrieval,Retrieval,S01
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,42.0215924000368,42.1027067999821,,NaN,,,D12,0,26,8,Retrieval,Retrieval,S01
+dragon_statue,Queen Elizabeth,NaN,NaN,0.55,55.1694563999772,55.2529715000419,NaN,NaN,NaN,,D12,1,27,1,Encoding,NaN,S01
+dragon_statue,Queen Elizabeth,NaN,NaN,0.55,55.871375799994,55.9356722000521,,NaN,,,D12,1,28,1,Encoding,NaN,S01
+cash_register,John Kennedy,NaN,NaN,0.65,56.6033699000254,56.686742400052,NaN,NaN,NaN,,D12,1,29,2,Encoding,NaN,S01
+cash_register,John Kennedy,NaN,NaN,0.65,57.4448439000407,57.5191530999728,,NaN,,,D12,1,30,2,Encoding,NaN,S01
+swimsuit,Hugh Grant,NaN,NaN,0.56,58.0857708000112,58.169911700068,NaN,NaN,NaN,,D12,1,31,3,Encoding,NaN,S01
+swimsuit,Hugh Grant,NaN,NaN,0.56,58.6934303999878,58.7692507000174,,NaN,,,D12,1,32,3,Encoding,NaN,S01
+saltshaker,Zac Effron,NaN,NaN,0.63,59.4196367000695,59.5027229000116,NaN,NaN,NaN,,D12,1,33,4,Encoding,NaN,S01
+saltshaker,Zac Effron,NaN,NaN,0.63,60.1252336000325,60.2021595999831,,NaN,,,D12,1,34,4,Encoding,NaN,S01
+flower_pot,Brad Pitt,NaN,NaN,0.65,60.8698099000612,60.9529248999897,NaN,NaN,NaN,,D12,1,35,5,Encoding,NaN,S01
+flower_pot,Brad Pitt,NaN,NaN,0.65,61.5802104000468,61.6519394000061,,NaN,,,D12,1,36,5,Encoding,NaN,S01
+yarn,Dwayne Johnson,NaN,NaN,0.52,62.186223900062,62.2694037000183,NaN,NaN,NaN,,D12,1,37,6,Encoding,NaN,S01
+yarn,Dwayne Johnson,NaN,NaN,0.52,62.9761315999785,63.0518453000113,,NaN,,,D12,1,38,6,Encoding,NaN,S01
+pot_of_gold,Drake Graham,NaN,NaN,0.63,63.7023088000715,63.7858579000458,NaN,NaN,NaN,,D12,1,39,7,Encoding,NaN,S01
+pot_of_gold,Drake Graham,NaN,NaN,0.63,64.5109848000575,64.5851265999954,,NaN,,,D12,1,40,7,Encoding,NaN,S01
+lantern,Morgan Freeman,NaN,NaN,0.72,65.3193279000698,65.4025169999804,NaN,NaN,NaN,,D12,1,41,8,Encoding,NaN,S01
+lantern,Morgan Freeman,NaN,NaN,0.72,65.9778117999667,66.0515940000769,,NaN,,,D12,1,42,8,Encoding,NaN,S01
+razor,Paris Hilton,NaN,NaN,0.74,66.8026207999792,66.8859695000574,NaN,NaN,NaN,,D12,1,43,9,Encoding,NaN,S01
+razor,Paris Hilton,NaN,NaN,0.74,67.5237115999917,67.6017795000225,,NaN,,,D12,1,44,9,Encoding,NaN,S01
+money,Condoliza Rice,NaN,NaN,0.53,68.1515172000509,68.2348856000463,NaN,NaN,NaN,,D12,1,45,10,Encoding,NaN,S01
+money,Condoliza Rice,NaN,NaN,0.53,68.8515088000568,68.9348056999734,,NaN,,,D12,1,46,10,Encoding,NaN,S01
+crowbar,Chris Hemsworth,NaN,NaN,0.55,69.5014552000212,69.5847862999653,NaN,NaN,NaN,,D12,1,47,11,Encoding,NaN,S01
+crowbar,Chris Hemsworth,NaN,NaN,0.55,70.2514512999915,70.3346845000051,,NaN,,,D12,1,48,11,Encoding,NaN,S01
+chainsaw,Mark Walberg,NaN,NaN,0.64,70.9847310000332,71.0679960000562,NaN,NaN,NaN,,D12,1,49,12,Encoding,NaN,S01
+chainsaw,Mark Walberg,NaN,NaN,0.64,71.7680656000739,71.8513847000431,,NaN,,,D12,1,50,12,Encoding,NaN,S01
+totem_pole,Charlize Therone,NaN,NaN,0.75,72.6180515000597,72.7013750000624,NaN,NaN,NaN,,D12,1,51,13,Encoding,NaN,S01
+totem_pole,Charlize Therone,NaN,NaN,0.75,73.4012434000615,73.4845118999947,,NaN,,,D12,1,52,13,Encoding,NaN,S01
+pocket_watch,Robert Pattinson,NaN,NaN,0.59,74.0845380000537,74.1678979999851,NaN,NaN,NaN,,D12,1,53,14,Encoding,NaN,S01
+pocket_watch,Robert Pattinson,NaN,NaN,0.59,74.7511656000279,74.8344634000678,,NaN,,,D12,1,54,14,Encoding,NaN,S01
+pot_of_gold,Drake Graham,Hugh Grant,Zac Effron,0.63,77.4844288000604,77.5677625000244,,3,,,D12,1,55,1,Retrieval,Retrieval,S01
+pot_of_gold,Drake Graham,Hugh Grant,Zac Effron,0.63,78.1179477999685,78.2012997000711,,NaN,,,D12,1,56,1,Retrieval,Retrieval,S01
+trumpet,Charlize Therone,Condoliza Rice,Zac Effron,0.58,78.8014093000675,78.8849346999777,,4,,,D12,1,57,2,Retrieval,Lure,S01
+trumpet,Charlize Therone,Condoliza Rice,Zac Effron,0.58,79.5606582000619,79.6343756000279,,NaN,,,D12,1,58,2,Retrieval,Lure,S01
+flower_pot,Brad Pitt,Zac Effron,Queen Elizabeth,0.65,80.3010577000678,80.3844693000428,,1,,,D12,1,59,3,Retrieval,Retrieval,S01
+flower_pot,Brad Pitt,Zac Effron,Queen Elizabeth,0.65,81.0418373000575,81.117624900071,,NaN,,,D12,1,60,3,Retrieval,Retrieval,S01
+swimsuit,Hugh Grant,Brad Pitt,Zac Effron,0.56,81.6842877999879,81.767664300045,,1,,,D12,1,61,4,Retrieval,Retrieval,S01
+swimsuit,Hugh Grant,Brad Pitt,Zac Effron,0.56,82.4303769000107,82.5008924000431,,NaN,,,D12,1,62,4,Retrieval,Retrieval,S01
+yarn,Dwayne Johnson,Zac Effron,Chris Hemsworth,0.52,83.0399377000285,83.1175962999696,,1,,,D12,1,63,5,Retrieval,Retrieval,S01
+yarn,Dwayne Johnson,Zac Effron,Chris Hemsworth,0.52,83.8343432999682,83.9175029000035,,NaN,,,D12,1,64,5,Retrieval,Retrieval,S01
+stroller,Condoliza Rice,Charlize Therone,Drake Graham,0.57,84.5095214999747,84.5843504000222,,4,,,D12,1,65,6,Retrieval,Lure,S01
+stroller,Condoliza Rice,Charlize Therone,Drake Graham,0.57,85.3373403999722,85.4175122000743,,NaN,,,D12,1,66,6,Retrieval,Lure,S01
+saltshaker,Zac Effron,Brad Pitt,Charlize Therone,0.63,86.0711393000092,86.1507821000414,,3,,,D12,1,67,7,Retrieval,Retrieval,S01
+saltshaker,Zac Effron,Brad Pitt,Charlize Therone,0.63,86.8299736999907,86.9007739999797,,NaN,,,D12,1,68,7,Retrieval,Retrieval,S01
+dragon_statue,Queen Elizabeth,Hugh Grant,Brad Pitt,0.55,87.4718860000139,87.5507043000543,,2,,,D12,1,69,8,Retrieval,Retrieval,S01
+dragon_statue,Queen Elizabeth,Hugh Grant,Brad Pitt,0.55,88.2271714999806,88.3006651999895,,NaN,,,D12,1,70,8,Retrieval,Retrieval,S01
+cash_register,John Kennedy,Zac Effron,Queen Elizabeth,0.65,88.9748201000039,89.050744600012,,2,,,D12,1,71,9,Retrieval,Retrieval,S01
+cash_register,John Kennedy,Zac Effron,Queen Elizabeth,0.65,89.7554747000104,89.8338908000151,,NaN,,,D12,1,72,9,Retrieval,Retrieval,S01
+lantern,Morgan Freeman,Condoliza Rice,Chris Hemsworth,0.72,90.5727160000242,90.6505087000551,,3,,,D12,1,73,10,Retrieval,Retrieval,S01
+lantern,Morgan Freeman,Condoliza Rice,Chris Hemsworth,0.72,91.1890606000088,91.2671124000335,,NaN,,,D12,1,74,10,Retrieval,Retrieval,S01
+pick,Robert Pattinson,Hugh Grant,Mark Walberg,0.63,91.9197400000412,92.0005513000069,,4,,,D12,1,75,11,Retrieval,Lure,S01
+pick,Robert Pattinson,Hugh Grant,Mark Walberg,0.63,92.7548129999777,92.8339382000268,,NaN,,,D12,1,76,11,Retrieval,Lure,S01
+money,Condoliza Rice,John Kennedy,Chris Hemsworth,0.53,93.3892853000434,93.4673252999783,,1,,,D12,1,77,12,Retrieval,Retrieval,S01
+money,Condoliza Rice,John Kennedy,Chris Hemsworth,0.53,93.9922960000113,94.067170000053,,NaN,,,D12,1,78,12,Retrieval,Retrieval,S01
+crowbar,Chris Hemsworth,Morgan Freeman,Brad Pitt,0.55,94.6401185999857,94.7169718999648,,2,,,D12,1,79,13,Retrieval,Retrieval,S01
+crowbar,Chris Hemsworth,Morgan Freeman,Brad Pitt,0.55,95.3248889000388,95.400486700004,,NaN,,,D12,1,80,13,Retrieval,Retrieval,S01
+beret,Robert Pattinson,Chris Hemsworth,Zac Effron,0.61,96.0174108999781,96.1004835000494,,4,,,D12,1,81,14,Retrieval,Lure,S01
+beret,Robert Pattinson,Chris Hemsworth,Zac Effron,0.61,96.6925255999668,96.7671093000099,,NaN,,,D12,1,82,14,Retrieval,Lure,S01
+razor,Paris Hilton,Brad Pitt,Chris Hemsworth,0.74,97.5238838000223,97.6002915999852,,1,,,D12,1,83,15,Retrieval,Retrieval,S01
+razor,Paris Hilton,Brad Pitt,Chris Hemsworth,0.74,98.224864799995,98.3001218000427,,NaN,,,D12,1,84,15,Retrieval,Retrieval,S01
+chainsaw,Mark Walberg,Chris Hemsworth,Hugh Grant,0.64,98.956209099968,99.0336980000138,,1,,,D12,1,85,16,Retrieval,Retrieval,S01
+chainsaw,Mark Walberg,Chris Hemsworth,Hugh Grant,0.64,99.5913717000512,99.6667208999861,,NaN,,,D12,1,86,16,Retrieval,Retrieval,S01
+pocket_watch,Robert Pattinson,Dwayne Johnson,Hugh Grant,0.59,100.272426999989,100.350208700052,,2,,,D12,1,87,17,Retrieval,Retrieval,S01
+pocket_watch,Robert Pattinson,Dwayne Johnson,Hugh Grant,0.59,100.889204800013,100.966677100048,,NaN,,,D12,1,88,17,Retrieval,Retrieval,S01
+totem_pole,Charlize Therone,John Kennedy,Queen Elizabeth,0.75,101.740251700045,101.816664200043,,2,,,D12,1,89,18,Retrieval,Retrieval,S01
+totem_pole,Charlize Therone,John Kennedy,Queen Elizabeth,0.75,102.33829059999,102.416707800003,,NaN,,,D12,1,90,18,Retrieval,Retrieval,S01
+cowboy_boot,Jack Nicolson,NaN,NaN,0.52,115.583372600027,115.667360699968,NaN,NaN,NaN,,D12,2,91,1,Encoding,NaN,S01
+cowboy_boot,Jack Nicolson,NaN,NaN,0.52,116.366335800034,116.458398999996,,NaN,,,D12,2,92,1,Encoding,NaN,S01
+belt,Lady Gaga,NaN,NaN,0.72,117.182864099974,117.266419499996,NaN,NaN,NaN,,D12,2,93,2,Encoding,NaN,S01
+belt,Lady Gaga,NaN,NaN,0.72,117.987552999984,118.065928900032,,NaN,,,D12,2,94,2,Encoding,NaN,S01
+viking_helmet,Arnold Swarzenegger,NaN,NaN,0.6,118.682516900008,118.765968100051,NaN,NaN,NaN,,D12,2,95,3,Encoding,NaN,S01
+viking_helmet,Arnold Swarzenegger,NaN,NaN,0.6,119.499466000008,119.5824364,,NaN,,,D12,2,96,3,Encoding,NaN,S01
+rope,Jackie Chan,NaN,NaN,0.7,120.29930199997,120.382681400049,NaN,NaN,NaN,,D12,2,97,4,Encoding,NaN,S01
+rope,Jackie Chan,NaN,NaN,0.7,120.924288699985,120.999230699963,,NaN,,,D12,2,98,4,Encoding,NaN,S01
+cane,Albert Einstein,NaN,NaN,0.71,121.716872500023,121.799199700006,NaN,NaN,NaN,,D12,2,99,5,Encoding,NaN,S01
+cane,Albert Einstein,NaN,NaN,0.71,122.415624100016,122.498907700065,,NaN,,,D12,2,100,5,Encoding,NaN,S01
+cellphone,Tom Cruise,NaN,NaN,0.51,123.015598200029,123.099067699979,NaN,NaN,NaN,,D12,2,101,6,Encoding,NaN,S01
+cellphone,Tom Cruise,NaN,NaN,0.51,123.665542999981,123.748919000034,,NaN,,,D12,2,102,6,Encoding,NaN,S01
+handbell,Bill Gates,NaN,NaN,0.61,124.36554030003,124.44889400003,NaN,NaN,NaN,,D12,2,103,7,Encoding,NaN,S01
+handbell,Bill Gates,NaN,NaN,0.61,125.165543399984,125.249019899988,,NaN,,,D12,2,104,7,Encoding,NaN,S01
+bassoon,Hillary Clinton,NaN,NaN,0.55,125.81557830004,125.898969799979,NaN,NaN,NaN,,D12,2,105,8,Encoding,NaN,S01
+bassoon,Hillary Clinton,NaN,NaN,0.55,126.515994900023,126.599012900027,,NaN,,,D12,2,106,8,Encoding,NaN,S01
+headphone,Scarlett Johansson,NaN,NaN,0.61,127.215439700056,127.298718100064,NaN,NaN,NaN,,D12,2,107,9,Encoding,NaN,S01
+headphone,Scarlett Johansson,NaN,NaN,0.61,128.053018699982,128.132308300002,,NaN,,,D12,2,108,9,Encoding,NaN,S01
+metronome,Sandra Bullock,NaN,NaN,0.65,128.798770299996,128.882013799972,NaN,NaN,NaN,,D12,2,109,10,Encoding,NaN,S01
+metronome,Sandra Bullock,NaN,NaN,0.65,129.449225199991,129.532043399988,,NaN,,,D12,2,110,10,Encoding,NaN,S01
+joystick,Leonardo DiCaprio,NaN,NaN,0.54,130.082339300076,130.166322999983,NaN,NaN,NaN,,D12,2,111,11,Encoding,NaN,S01
+joystick,Leonardo DiCaprio,NaN,NaN,0.54,130.748688200023,130.83195849997,,NaN,,,D12,2,112,11,Encoding,NaN,S01
+camera_lens,Nelson Mandela,NaN,NaN,0.59,131.431930599967,131.515219900059,NaN,NaN,NaN,,D12,2,113,12,Encoding,NaN,S01
+camera_lens,Nelson Mandela,NaN,NaN,0.59,132.065243900055,132.148491400061,,NaN,,,D12,2,114,12,Encoding,NaN,S01
+walker,Emma Watson,NaN,NaN,0.59,132.748709000065,132.832598000066,NaN,NaN,NaN,,D12,2,115,13,Encoding,NaN,S01
+walker,Emma Watson,NaN,NaN,0.59,133.381824300042,133.465278999996,,NaN,,,D12,2,116,13,Encoding,NaN,S01
+dryer,Mel Gibson,NaN,NaN,0.74,134.215085400036,134.298477599979,NaN,NaN,NaN,,D12,2,117,14,Encoding,NaN,S01
+dryer,Mel Gibson,NaN,NaN,0.74,135.031818600022,135.115345000057,,NaN,,,D12,2,118,14,Encoding,NaN,S01
+rope,Jackie Chan,Nelson Mandela,Mel Gibson,0.7,137.836816500057,137.914966400014,,3,,,D12,2,119,1,Retrieval,Retrieval,S01
+rope,Jackie Chan,Nelson Mandela,Mel Gibson,0.7,138.631556999986,138.715091399965,,NaN,,,D12,2,120,1,Retrieval,Retrieval,S01
+safe,Tom Cruise,Jack Nicolson,Jackie Chan,0.63,139.365118100075,139.449318300001,,4,,,D12,2,121,2,Retrieval,Lure,S01
+safe,Tom Cruise,Jack Nicolson,Jackie Chan,0.63,140.080929600052,140.148221899988,,NaN,,,D12,2,122,2,Retrieval,Lure,S01
+viking_helmet,Arnold Swarzenegger,Jackie Chan,Hillary Clinton,0.6,140.764924000017,140.848381599993,,1,,,D12,2,123,3,Retrieval,Retrieval,S01
+viking_helmet,Arnold Swarzenegger,Jackie Chan,Hillary Clinton,0.6,141.414943500073,141.498317799997,,NaN,,,D12,2,124,3,Retrieval,Retrieval,S01
+cane,Albert Einstein,Jackie Chan,Arnold Swarzenegger,0.71,142.214850699995,142.298595800065,,2,,,D12,2,125,4,Retrieval,Retrieval,S01
+cane,Albert Einstein,Jackie Chan,Arnold Swarzenegger,0.71,143.054455099977,143.131409700029,,NaN,,,D12,2,126,4,Retrieval,Retrieval,S01
+belt,Lady Gaga,Leonardo DiCaprio,Scarlett Johansson,0.72,143.864751799963,143.948159400024,,3,,,D12,2,127,5,Retrieval,Retrieval,S01
+belt,Lady Gaga,Leonardo DiCaprio,Scarlett Johansson,0.72,144.548052400001,144.631268800003,,NaN,,,D12,2,128,5,Retrieval,Retrieval,S01
+handbell,Bill Gates,Leonardo DiCaprio,Tom Cruise,0.61,145.247977799969,145.331232800032,,3,,,D12,2,129,6,Retrieval,Retrieval,S01
+handbell,Bill Gates,Leonardo DiCaprio,Tom Cruise,0.61,146.048028900055,146.131293400074,,NaN,,,D12,2,130,6,Retrieval,Retrieval,S01
+cigar,Hillary Clinton,Jack Nicolson,Nelson Mandela,0.57,146.714677000069,146.797946200008,,4,,,D12,2,131,7,Retrieval,Lure,S01
+cigar,Hillary Clinton,Jack Nicolson,Nelson Mandela,0.57,147.339590299991,147.414621300064,,NaN,,,D12,2,132,7,Retrieval,Lure,S01
+cowboy_boot,Jack Nicolson,Tom Cruise,Lady Gaga,0.52,147.948203300009,148.031272800057,,1,,,D12,2,133,8,Retrieval,Retrieval,S01
+cowboy_boot,Jack Nicolson,Tom Cruise,Lady Gaga,0.52,148.684228500002,148.764415299986,,NaN,,,D12,2,134,8,Retrieval,Retrieval,S01
+cellphone,Tom Cruise,Leonardo DiCaprio,Scarlett Johansson,0.51,149.281249799998,149.364593000035,,1,,,D12,2,135,9,Retrieval,Retrieval,S01
+cellphone,Tom Cruise,Leonardo DiCaprio,Scarlett Johansson,0.51,150.081193699967,150.164531999966,,NaN,,,D12,2,136,9,Retrieval,Retrieval,S01
+metronome,Sandra Bullock,Mel Gibson,Jackie Chan,0.65,150.831223400077,150.914332400076,,1,,,D12,2,137,10,Retrieval,Retrieval,S01
+metronome,Sandra Bullock,Mel Gibson,Jackie Chan,0.65,151.583446100005,151.66435029998,,NaN,,,D12,2,138,10,Retrieval,Retrieval,S01
+dryer,Mel Gibson,Arnold Swarzenegger,Sandra Bullock,0.74,152.414338600007,152.49781500001,,3,,,D12,2,139,11,Retrieval,Retrieval,S01
+dryer,Mel Gibson,Arnold Swarzenegger,Sandra Bullock,0.74,153.151918300078,153.231014200021,,NaN,,,D12,2,140,11,Retrieval,Retrieval,S01
+scoop,Sandra Bullock,Tom Cruise,Emma Watson,0.67,153.914689800004,153.997695200029,,4,,,D12,2,141,12,Retrieval,Lure,S01
+scoop,Sandra Bullock,Tom Cruise,Emma Watson,0.67,154.680972100003,154.76452029997,,NaN,,,D12,2,142,12,Retrieval,Lure,S01
+walker,Emma Watson,Jackie Chan,Scarlett Johansson,0.59,155.364190799999,155.447576400009,,1,,,D12,2,143,13,Retrieval,Retrieval,S01
+walker,Emma Watson,Jackie Chan,Scarlett Johansson,0.59,156.175731900032,156.247364600073,,NaN,,,D12,2,144,13,Retrieval,Retrieval,S01
+joystick,Leonardo DiCaprio,Emma Watson,Scarlett Johansson,0.54,156.797615500051,156.880960499984,,1,,,D12,2,145,14,Retrieval,Retrieval,S01
+joystick,Leonardo DiCaprio,Emma Watson,Scarlett Johansson,0.54,157.514257000061,157.597754099988,,NaN,,,D12,2,146,14,Retrieval,Retrieval,S01
+bassoon,Hillary Clinton,Leonardo DiCaprio,Tom Cruise,0.55,158.168324799975,158.247571300017,,2,,,D12,2,147,15,Retrieval,Retrieval,S01
+bassoon,Hillary Clinton,Leonardo DiCaprio,Tom Cruise,0.55,158.897485199966,158.98079010006,,NaN,,,D12,2,148,15,Retrieval,Retrieval,S01
+inkwell,Hillary Clinton,Sandra Bullock,Scarlett Johansson,0.68,159.680946200038,159.7641573,,4,,,D12,2,149,16,Retrieval,Lure,S01
+inkwell,Hillary Clinton,Sandra Bullock,Scarlett Johansson,0.68,160.436072900076,160.513950800058,,NaN,,,D12,2,150,16,Retrieval,Lure,S01
+camera_lens,Nelson Mandela,Arnold Swarzenegger,Bill Gates,0.59,161.114055000013,161.197282799985,,1,,,D12,2,151,17,Retrieval,Retrieval,S01
+camera_lens,Nelson Mandela,Arnold Swarzenegger,Bill Gates,0.59,161.797177199973,161.880832500057,,NaN,,,D12,2,152,17,Retrieval,Retrieval,S01
+headphone,Scarlett Johansson,Tom Cruise,Jack Nicolson,0.61,162.499409900047,162.580568299978,,3,,,D12,2,153,18,Retrieval,Retrieval,S01
+headphone,Scarlett Johansson,Tom Cruise,Jack Nicolson,0.61,163.247144400026,163.330456200056,,NaN,,,D12,2,154,18,Retrieval,Retrieval,S01
+hollywood_star,Jennifer Lopez,NaN,NaN,0.64,179.99723410001,180.079967700061,NaN,NaN,NaN,,D12,3,155,1,Encoding,NaN,S01
+hollywood_star,Jennifer Lopez,NaN,NaN,0.64,180.74641630007,180.82979940006,,NaN,,,D12,3,156,1,Encoding,NaN,S01
+tambourine,Matt Damon,NaN,NaN,0.73,181.58042969997,181.663021299988,NaN,NaN,NaN,,D12,3,157,2,Encoding,NaN,S01
+tambourine,Matt Damon,NaN,NaN,0.73,182.237779699964,182.312896099989,,NaN,,,D12,3,158,2,Encoding,NaN,S01
+mixer,Kanye West,NaN,NaN,0.69,183.013843800058,183.096560199978,NaN,NaN,NaN,,D12,3,159,3,Encoding,NaN,S01
+mixer,Kanye West,NaN,NaN,0.69,183.696314600063,183.779683800065,UpArrow,NaN,183.704121500021,,D12,3,160,3,Encoding,NaN,S01
+radio,Donald Trump,NaN,NaN,0.58,184.380490700016,184.463551599998,NaN,NaN,NaN,,D12,3,161,4,Encoding,NaN,S01
+radio,Donald Trump,NaN,NaN,0.58,185.09618880006,185.179573200061,DownArrow,NaN,185.119353899965,,D12,3,162,4,Encoding,NaN,S01
+stamp,Joe Biden,NaN,NaN,0.59,185.780387100065,185.862919199979,NaN,NaN,NaN,,D12,3,163,5,Encoding,NaN,S01
+stamp,Joe Biden,NaN,NaN,0.59,186.429622799973,186.51286430005,DownArrow,NaN,186.502547600074,,D12,3,164,5,Encoding,NaN,S01
+telescope,Tom Hanks,NaN,NaN,0.61,187.129513400025,187.212971300003,NaN,NaN,NaN,,D12,3,165,6,Encoding,NaN,S01
+telescope,Tom Hanks,NaN,NaN,0.61,187.929648000048,188.0129036,DownArrow,NaN,187.970942200045,,D12,3,166,6,Encoding,NaN,S01
+bowl,Dalai Lama,NaN,NaN,0.69,188.713643199997,188.796977399965,NaN,NaN,NaN,,D12,3,167,7,Encoding,NaN,S01
+bowl,Dalai Lama,NaN,NaN,0.69,189.362813099986,189.446145500056,RightArrow,NaN,189.435764000053,,D12,3,168,7,Encoding,NaN,S01
+toothbrush,Gerard Butler,NaN,NaN,0.64,190.095953900018,190.179398600012,NaN,NaN,NaN,,D12,3,169,8,Encoding,NaN,S01
+toothbrush,Gerard Butler,NaN,NaN,0.64,190.746042000013,190.829250700073,LeftArrow,NaN,190.786666600034,,D12,3,170,8,Encoding,NaN,S01
+organ,Vladimir Putin,NaN,NaN,0.53,191.379502300057,191.46251089999,NaN,NaN,NaN,,D12,3,171,9,Encoding,NaN,S01
+organ,Vladimir Putin,NaN,NaN,0.53,192.012650600052,192.095761800068,LeftArrow,NaN,192.085652000038,,D12,3,172,9,Encoding,NaN,S01
+pushpin,Rowan Attkinson,NaN,NaN,0.74,192.846238299971,192.929662500042,NaN,NaN,NaN,,D12,3,173,10,Encoding,NaN,S01
+pushpin,Rowan Attkinson,NaN,NaN,0.74,193.495813800022,193.579295000061,RightArrow,NaN,193.568551599979,,D12,3,174,10,Encoding,NaN,S01
+grater,Selena Gomez,NaN,NaN,0.72,194.312435999978,194.395855300012,NaN,NaN,NaN,,D12,3,175,11,Encoding,NaN,S01
+grater,Selena Gomez,NaN,NaN,0.72,195.012571300031,195.095950799994,LeftArrow,NaN,195.086575299967,,D12,3,176,11,Encoding,NaN,S01
+french_press,Jason Statham,NaN,NaN,0.59,195.696136299986,195.779689499992,NaN,NaN,NaN,,D12,3,177,12,Encoding,NaN,S01
+french_press,Jason Statham,NaN,NaN,0.59,196.378907700069,196.462238500011,LeftArrow,NaN,196.45331640006,,D12,3,178,12,Encoding,NaN,S01
+globe,Mariah Carey,NaN,NaN,0.71,197.179082600051,197.2624756,NaN,NaN,NaN,,D12,3,179,13,Encoding,NaN,S01
+globe,Mariah Carey,NaN,NaN,0.71,198.012112800032,198.095581499976,,NaN,,,D12,3,180,13,Encoding,NaN,S01
+lock_cutters,Taylor Lautner,NaN,NaN,0.63,198.746047000051,198.82895190001,NaN,NaN,NaN,,D12,3,181,14,Encoding,NaN,S01
+lock_cutters,Taylor Lautner,NaN,NaN,0.63,199.445342399995,199.528714100015,,NaN,,,D12,3,182,14,Encoding,NaN,S01
+tambourine,Matt Damon,Joe Biden,Mariah Carey,0.73,202.27901649999,202.361888400046,,1,,,D12,3,183,1,Retrieval,Retrieval,S01
+tambourine,Matt Damon,Joe Biden,Mariah Carey,0.73,202.978684199974,203.061849400052,,NaN,,,D12,3,184,1,Retrieval,Retrieval,S01
+bowl,Dalai Lama,Jennifer Lopez,Joe Biden,0.69,203.762770300033,203.845128900022,,1,,,D12,3,185,2,Retrieval,Retrieval,S01
+bowl,Dalai Lama,Jennifer Lopez,Joe Biden,0.69,204.512036700035,204.595115600037,,NaN,,,D12,3,186,2,Retrieval,Retrieval,S01
+mixer,Kanye West,Donald Trump,Taylor Lautner,0.69,205.296087200055,205.378611000022,,1,,,D12,3,187,3,Retrieval,Retrieval,S01
+mixer,Kanye West,Donald Trump,Taylor Lautner,0.69,205.945250199991,206.028735000058,,NaN,,,D12,3,188,3,Retrieval,Retrieval,S01
+stamp,Joe Biden,Rowan Attkinson,Gerard Butler,0.59,206.631503300043,206.711932300008,,1,,,D12,3,189,4,Retrieval,Retrieval,S01
+stamp,Joe Biden,Rowan Attkinson,Gerard Butler,0.59,207.328585600015,207.411885500071,,NaN,,,D12,3,190,4,Retrieval,Retrieval,S01
+hollywood_star,Jennifer Lopez,Mariah Carey,Dalai Lama,0.64,208.064498399966,208.145243200008,,3,,,D12,3,191,5,Retrieval,Retrieval,S01
+hollywood_star,Jennifer Lopez,Mariah Carey,Dalai Lama,0.64,208.861554700066,208.944903900032,,NaN,,,D12,3,192,5,Retrieval,Retrieval,S01
+accordion,Kanye West,Vladimir Putin,Gerard Butler,0.52,209.47841500002,209.561570700025,,4,,,D12,3,193,6,Retrieval,Lure,S01
+accordion,Kanye West,Vladimir Putin,Gerard Butler,0.52,210.199359199964,210.278144599986,,NaN,,,D12,3,194,6,Retrieval,Lure,S01
+shaker,Jennifer Lopez,Donald Trump,Kanye West,0.68,210.978341900045,211.061429699999,,4,,,D12,3,195,7,Retrieval,Lure,S01
+shaker,Jennifer Lopez,Donald Trump,Kanye West,0.68,211.811520799994,211.894778699963,,NaN,,,D12,3,196,7,Retrieval,Lure,S01
+radio,Donald Trump,Kanye West,Gerard Butler,0.58,212.494978300063,212.578211700078,,3,,,D12,3,197,8,Retrieval,Retrieval,S01
+radio,Donald Trump,Kanye West,Gerard Butler,0.58,213.214544899995,213.294897400076,,NaN,,,D12,3,198,8,Retrieval,Retrieval,S01
+telescope,Tom Hanks,Joe Biden,Selena Gomez,0.61,213.912636099965,213.994824200054,,2,,,D12,3,199,9,Retrieval,Retrieval,S01
+telescope,Tom Hanks,Joe Biden,Selena Gomez,0.61,214.594706100062,214.677929099998,,NaN,,,D12,3,200,9,Retrieval,Retrieval,S01
+lock_cutters,Taylor Lautner,Dalai Lama,Gerard Butler,0.63,215.327858900069,215.411235200008,,3,,,D12,3,201,10,Retrieval,Retrieval,S01
+lock_cutters,Taylor Lautner,Dalai Lama,Gerard Butler,0.63,216.161194700049,216.244475899963,,NaN,,,D12,3,202,10,Retrieval,Retrieval,S01
+globe,Mariah Carey,Dalai Lama,Gerard Butler,0.71,216.961740800063,217.044536000001,,3,,,D12,3,203,11,Retrieval,Retrieval,S01
+globe,Mariah Carey,Dalai Lama,Gerard Butler,0.71,217.644436000031,217.727987100021,,NaN,,,D12,3,204,11,Retrieval,Retrieval,S01
+grater,Selena Gomez,Dalai Lama,Donald Trump,0.72,218.461933600018,218.544464100036,,2,,,D12,3,205,12,Retrieval,Retrieval,S01
+grater,Selena Gomez,Dalai Lama,Donald Trump,0.72,219.094959500013,219.178076400072,,NaN,,,D12,3,206,12,Retrieval,Retrieval,S01
+corkscrew,Dalai Lama,Kanye West,Jennifer Lopez,0.56,219.747936600004,219.82782450004,,4,,,D12,3,207,13,Retrieval,Lure,S01
+corkscrew,Dalai Lama,Kanye West,Jennifer Lopez,0.56,220.535248300061,220.611127400072,,NaN,,,D12,3,208,13,Retrieval,Lure,S01
+toothbrush,Gerard Butler,Mariah Carey,Tom Hanks,0.64,221.261025900021,221.344308600063,,3,,,D12,3,209,14,Retrieval,Retrieval,S01
+toothbrush,Gerard Butler,Mariah Carey,Tom Hanks,0.64,222.035882900003,222.111251399969,,NaN,,,D12,3,210,14,Retrieval,Retrieval,S01
+pushpin,Rowan Attkinson,Tom Hanks,Taylor Lautner,0.74,222.861164200003,222.944467399968,,2,,,D12,3,211,15,Retrieval,Retrieval,S01
+pushpin,Rowan Attkinson,Tom Hanks,Taylor Lautner,0.74,223.594720700057,223.677831300069,,NaN,,,D12,3,212,15,Retrieval,Retrieval,S01
+french_press,Jason Statham,Taylor Lautner,Joe Biden,0.59,224.277917200001,224.361153300037,,1,,,D12,3,213,16,Retrieval,Retrieval,S01
+french_press,Jason Statham,Taylor Lautner,Joe Biden,0.59,225.028135300032,225.111281599966,,NaN,,,D12,3,214,16,Retrieval,Retrieval,S01
+bowler_hat,Joe Biden,Rowan Attkinson,Jennifer Lopez,0.51,225.627328600036,225.710746700061,,4,,,D12,3,215,17,Retrieval,Lure,S01
+bowler_hat,Joe Biden,Rowan Attkinson,Jennifer Lopez,0.51,226.277598800021,226.360882600071,,NaN,,,D12,3,216,17,Retrieval,Lure,S01
+organ,Vladimir Putin,Kanye West,Selena Gomez,0.53,226.91104190005,226.994074500049,,2,,,D12,3,217,18,Retrieval,Retrieval,S01
+organ,Vladimir Putin,Kanye West,Selena Gomez,0.53,227.627435200033,227.710976800066,,NaN,,,D12,3,218,18,Retrieval,Retrieval,S01
+pinata,Barack Obama,NaN,NaN,0.57,244.427699399996,244.510354100028,NaN,NaN,NaN,,D12,4,219,1,Encoding,NaN,S01
+pinata,Barack Obama,NaN,NaN,0.57,245.067919600056,245.143673000042,,NaN,,,D12,4,220,1,Encoding,NaN,S01
+hourglass,Cara Delevingne,NaN,NaN,0.69,245.843105499982,245.926456100075,NaN,NaN,NaN,,D12,4,221,2,Encoding,NaN,S01
+hourglass,Cara Delevingne,NaN,NaN,0.69,246.676380799967,246.759980299976,,NaN,,,D12,4,222,2,Encoding,NaN,S01
+musical_keyboard,Sean Connery,NaN,NaN,0.68,247.460030999966,247.543544100015,NaN,NaN,NaN,,D12,4,223,3,Encoding,NaN,S01
+musical_keyboard,Sean Connery,NaN,NaN,0.68,248.245545500075,248.326394499978,,NaN,,,D12,4,224,3,Encoding,NaN,S01
+oil_can,Will Smith,NaN,NaN,0.56,248.893341799965,248.976337800035,NaN,NaN,NaN,,D12,4,225,4,Encoding,NaN,S01
+oil_can,Will Smith,NaN,NaN,0.56,249.626339900075,249.709670900018,,NaN,,,D12,4,226,4,Encoding,NaN,S01
+saxophone,Muammar Gaddafi,NaN,NaN,0.52,250.243946000002,250.32636279997,NaN,NaN,NaN,,D12,4,227,5,Encoding,NaN,S01
+saxophone,Muammar Gaddafi,NaN,NaN,0.52,250.959545299993,251.042967300047,,NaN,,,D12,4,228,5,Encoding,NaN,S01
+mask,Julia Roberts,NaN,NaN,0.69,251.74288210005,251.826367500005,NaN,NaN,NaN,,D12,4,229,6,Encoding,NaN,S01
+mask,Julia Roberts,NaN,NaN,0.69,252.35448400001,252.426109699998,,NaN,,,D12,4,230,6,Encoding,NaN,S01
+microphone,Denzel Washington,NaN,NaN,0.52,252.960088800057,253.043623600039,NaN,NaN,NaN,,D12,4,231,7,Encoding,NaN,S01
+microphone,Denzel Washington,NaN,NaN,0.52,253.734419299988,253.809680300066,,NaN,,,D12,4,232,7,Encoding,NaN,S01
+thimble,Cameron Diaz,NaN,NaN,0.67,254.493524500052,254.576584700029,NaN,NaN,NaN,,D12,4,233,8,Encoding,NaN,S01
+thimble,Cameron Diaz,NaN,NaN,0.67,255.092771399999,255.176415199996,,NaN,,,D12,4,234,8,Encoding,NaN,S01
+wrench,Nicolas Cage,NaN,NaN,0.72,255.910423599998,255.993787100073,NaN,NaN,NaN,,D12,4,235,9,Encoding,NaN,S01
+wrench,Nicolas Cage,NaN,NaN,0.72,256.526122300071,256.609285300015,,NaN,,,D12,4,236,9,Encoding,NaN,S01
+axe,Britney Spears,NaN,NaN,0.73,257.359295599977,257.442728399998,NaN,NaN,NaN,,D12,4,237,10,Encoding,NaN,S01
+axe,Britney Spears,NaN,NaN,0.73,258.092680400005,258.176202100003,,NaN,,,D12,4,238,10,Encoding,NaN,S01
+rolling_pin,Harrison Ford,NaN,NaN,0.66,258.843340800027,258.926502300077,NaN,NaN,NaN,,D12,4,239,11,Encoding,NaN,S01
+rolling_pin,Harrison Ford,NaN,NaN,0.66,259.465271900059,259.54282480001,,NaN,,,D12,4,240,11,Encoding,NaN,S01
+gear,Katy Perry,NaN,NaN,0.61,260.160050500068,260.242805000045,NaN,NaN,NaN,,D12,4,241,12,Encoding,NaN,S01
+gear,Katy Perry,NaN,NaN,0.61,260.959773999988,261.043171599973,,NaN,,,D12,4,242,12,Encoding,NaN,S01
+fan,George Clooney,NaN,NaN,0.56,261.609979500063,261.693206000025,NaN,NaN,NaN,,D12,4,243,13,Encoding,NaN,S01
+fan,George Clooney,NaN,NaN,0.56,262.409309700015,262.496352500049,control,NaN,262.482628299971,,D12,4,244,13,Encoding,NaN,S01
+tanktop,Madonna Louise,NaN,NaN,0.5,263.00961920002,263.092900100048,NaN,NaN,NaN,,D12,4,245,14,Encoding,NaN,S01
+tanktop,Madonna Louise,NaN,NaN,0.5,263.79959249997,263.875958799967,,NaN,,,D12,4,246,14,Encoding,NaN,S01
+slot_machine,Harrison Ford,Cameron Diaz,George Clooney,0.68,266.575755500002,266.659089499968,,4,,,D12,4,247,1,Retrieval,Lure,S01
+slot_machine,Harrison Ford,Cameron Diaz,George Clooney,0.68,267.410029500024,267.492356600007,,NaN,,,D12,4,248,1,Retrieval,Lure,S01
+saxophone,Muammar Gaddafi,Katy Perry,Cameron Diaz,0.52,268.025984100066,268.108925900073,,2,,,D12,4,249,2,Retrieval,Retrieval,S01
+saxophone,Muammar Gaddafi,Katy Perry,Cameron Diaz,0.52,268.73480970005,268.809019700042,,NaN,,,D12,4,250,2,Retrieval,Retrieval,S01
+musical_keyboard,Sean Connery,Nicolas Cage,Cameron Diaz,0.68,269.516017999966,269.592314500012,,3,,,D12,4,251,3,Retrieval,Retrieval,S01
+musical_keyboard,Sean Connery,Nicolas Cage,Cameron Diaz,0.68,270.141995700076,270.225224400056,,NaN,,,D12,4,252,3,Retrieval,Retrieval,S01
+pinata,Barack Obama,George Clooney,Cara Delevingne,0.57,270.808752799989,270.89194380003,,1,,,D12,4,253,4,Retrieval,Retrieval,S01
+pinata,Barack Obama,George Clooney,Cara Delevingne,0.57,271.425440500025,271.508848699974,,NaN,,,D12,4,254,4,Retrieval,Retrieval,S01
+microphone,Denzel Washington,Cameron Diaz,Harrison Ford,0.52,272.042182300007,272.125166999991,,1,,,D12,4,255,5,Retrieval,Retrieval,S01
+microphone,Denzel Washington,Cameron Diaz,Harrison Ford,0.52,272.791968300007,272.875442299992,,NaN,,,D12,4,256,5,Retrieval,Retrieval,S01
+mask,Julia Roberts,Britney Spears,Will Smith,0.69,273.580526100006,273.65870400006,,3,,,D12,4,257,6,Retrieval,Retrieval,S01
+mask,Julia Roberts,Britney Spears,Will Smith,0.69,274.175430100062,274.258618999971,,NaN,,,D12,4,258,6,Retrieval,Retrieval,S01
+anchor,Denzel Washington,George Clooney,Julia Roberts,0.63,274.908683200018,274.991903200047,,4,,,D12,4,259,7,Retrieval,Lure,S01
+anchor,Denzel Washington,George Clooney,Julia Roberts,0.63,275.591954600066,275.675076600048,,NaN,,,D12,4,260,7,Retrieval,Lure,S01
+oil_can,Will Smith,Denzel Washington,Muammar Gaddafi,0.56,276.241929300013,276.325153900078,,1,,,D12,4,261,8,Retrieval,Retrieval,S01
+oil_can,Will Smith,Denzel Washington,Muammar Gaddafi,0.56,277.074962700019,277.158378400025,,NaN,,,D12,4,262,8,Retrieval,Retrieval,S01
+hourglass,Cara Delevingne,Muammar Gaddafi,Nicolas Cage,0.69,277.858542300062,277.941800600034,,3,,,D12,4,263,9,Retrieval,Retrieval,S01
+hourglass,Cara Delevingne,Muammar Gaddafi,Nicolas Cage,0.69,278.525253999978,278.60868090007,,NaN,,,D12,4,264,9,Retrieval,Retrieval,S01
+axe,Britney Spears,Katy Perry,Madonna Louise,0.73,279.358509500045,279.442009499995,,1,,,D12,4,265,10,Retrieval,Retrieval,S01
+axe,Britney Spears,Katy Perry,Madonna Louise,0.73,280.061470100074,280.142031199997,,NaN,,,D12,4,266,10,Retrieval,Retrieval,S01
+dress_shoe,Katy Perry,George Clooney,Britney Spears,0.52,280.67546170007,280.758630900062,,4,,,D12,4,267,11,Retrieval,Lure,S01
+dress_shoe,Katy Perry,George Clooney,Britney Spears,0.52,281.442013100022,281.525367400027,,NaN,,,D12,4,268,11,Retrieval,Lure,S01
+thimble,Cameron Diaz,Katy Perry,George Clooney,0.67,282.208245899994,282.291778600076,,1,,,D12,4,269,12,Retrieval,Retrieval,S01
+thimble,Cameron Diaz,Katy Perry,George Clooney,0.67,282.849029100034,282.925061400048,,NaN,,,D12,4,270,12,Retrieval,Retrieval,S01
+rolling_pin,Harrison Ford,Nicolas Cage,Will Smith,0.66,283.591825600015,283.675290500047,,1,,,D12,4,271,13,Retrieval,Retrieval,S01
+rolling_pin,Harrison Ford,Nicolas Cage,Will Smith,0.66,284.191584300017,284.275194599992,,NaN,,,D12,4,272,13,Retrieval,Retrieval,S01
+computer_mouse,Cara Delevingne,Harrison Ford,Denzel Washington,0.52,284.808286100044,284.89164190006,,4,,,D12,4,273,14,Retrieval,Lure,S01
+computer_mouse,Cara Delevingne,Harrison Ford,Denzel Washington,0.52,285.45836509997,285.54168470006,,NaN,,,D12,4,274,14,Retrieval,Lure,S01
+fan,George Clooney,Julia Roberts,Denzel Washington,0.56,286.111934500048,286.191739900038,,1,,,D12,4,275,15,Retrieval,Retrieval,S01
+fan,George Clooney,Julia Roberts,Denzel Washington,0.56,286.741400200059,286.825244500069,,NaN,,,D12,4,276,15,Retrieval,Retrieval,S01
+tanktop,Madonna Louise,Sean Connery,Will Smith,0.5,287.341173000052,287.424474400003,,3,,,D12,4,277,16,Retrieval,Retrieval,S01
+tanktop,Madonna Louise,Sean Connery,Will Smith,0.5,288.001863699988,288.07514500001,,NaN,,,D12,4,278,16,Retrieval,Retrieval,S01
+gear,Katy Perry,Madonna Louise,Nicolas Cage,0.61,288.69169830007,288.774791800068,,2,,,D12,4,279,17,Retrieval,Retrieval,S01
+gear,Katy Perry,Madonna Louise,Nicolas Cage,0.61,289.441608199966,289.524705599993,,NaN,,,D12,4,280,17,Retrieval,Retrieval,S01
+wrench,Nicolas Cage,George Clooney,Barack Obama,0.72,290.258143000072,290.341421699966,,1,,,D12,4,281,18,Retrieval,Retrieval,S01
+wrench,Nicolas Cage,George Clooney,Barack Obama,0.72,290.908446500078,290.991756099975,,NaN,,,D12,4,282,18,Retrieval,Retrieval,S01
+hand_saw,Sarah Palin,NaN,NaN,0.69,305.357321000076,305.440632499987,NaN,NaN,NaN,,D12,5,283,1,Encoding,NaN,S01
+hand_saw,Sarah Palin,NaN,NaN,0.69,306.024129700032,306.107331700041,,NaN,,,D12,5,284,1,Encoding,NaN,S01
+carabiner,Justin Bieber,NaN,NaN,0.74,306.857920099981,306.940597100067,NaN,NaN,NaN,,D12,5,285,2,Encoding,NaN,S01
+carabiner,Justin Bieber,NaN,NaN,0.74,307.607197100064,307.69065870007,,NaN,,,D12,5,286,2,Encoding,NaN,S01
+plunger,Oprah Winfrey,NaN,NaN,0.54,308.240204400034,308.323711700039,NaN,NaN,NaN,,D12,5,287,3,Encoding,NaN,S01
+plunger,Oprah Winfrey,NaN,NaN,0.54,308.907253300073,308.990438900073,,NaN,,,D12,5,288,3,Encoding,NaN,S01
+swiss_army_knife,Charlie Chaplin,NaN,NaN,0.55,309.55686979997,309.640193399973,NaN,NaN,NaN,,D12,5,289,4,Encoding,NaN,S01
+swiss_army_knife,Charlie Chaplin,NaN,NaN,0.55,310.356880499981,310.440149900038,,NaN,,,D12,5,290,4,Encoding,NaN,S01
+cowbell,Daniel Radcliffe,NaN,NaN,0.67,311.123528999975,311.20697900001,NaN,NaN,NaN,,D12,5,291,5,Encoding,NaN,S01
+cowbell,Daniel Radcliffe,NaN,NaN,0.67,311.973415400018,312.05673880002,,NaN,,,D12,5,292,5,Encoding,NaN,S01
+disk,Mother Teresa,NaN,NaN,0.55,312.623411100009,312.70678030001,NaN,NaN,NaN,,D12,5,293,6,Encoding,NaN,S01
+disk,Mother Teresa,NaN,NaN,0.55,313.406897900044,313.490245599998,,NaN,,,D12,5,294,6,Encoding,NaN,S01
+laptop,Steve Jobs,NaN,NaN,0.5,314.007518199971,314.090658299974,NaN,NaN,NaN,,D12,5,295,7,Encoding,NaN,S01
+laptop,Steve Jobs,NaN,NaN,0.5,314.690140199964,314.773510099971,,NaN,,,D12,5,296,7,Encoding,NaN,S01
+headband,Nicole Kidman,NaN,NaN,0.54,315.323449800024,315.4072132,NaN,NaN,NaN,,D12,5,297,8,Encoding,NaN,S01
+headband,Nicole Kidman,NaN,NaN,0.54,316.079445900046,316.156834800029,,NaN,,,D12,5,298,8,Encoding,NaN,S01
+syringe,Robin Williams,NaN,NaN,0.65,316.823242300074,316.906665000017,NaN,NaN,NaN,,D12,5,299,9,Encoding,NaN,S01
+syringe,Robin Williams,NaN,NaN,0.65,317.456822399981,317.54006410006,,NaN,,,D12,5,300,9,Encoding,NaN,S01
+harp,Taylor Swift,NaN,NaN,0.66,318.206491300021,318.290038499981,NaN,NaN,NaN,,D12,5,301,10,Encoding,NaN,S01
+harp,Taylor Swift,NaN,NaN,0.66,319.047086899984,319.123277500039,,NaN,,,D12,5,302,10,Encoding,NaN,S01
+coin,Keira Knightley,NaN,NaN,0.64,319.774034800008,319.85639760003,NaN,NaN,NaN,,D12,5,303,11,Encoding,NaN,S01
+coin,Keira Knightley,NaN,NaN,0.64,320.595301000052,320.673320300062,,NaN,,,D12,5,304,11,Encoding,NaN,S01
+blouse,George Bush,NaN,NaN,0.67,321.356441100012,321.439748500008,NaN,NaN,NaN,,D12,5,305,12,Encoding,NaN,S01
+blouse,George Bush,NaN,NaN,0.67,322.16063649999,322.239792300039,,NaN,,,D12,5,306,12,Encoding,NaN,S01
+trowel,Stephen Hawking,NaN,NaN,0.72,322.973747699987,323.057033600053,NaN,NaN,NaN,,D12,5,307,13,Encoding,NaN,S01
+trowel,Stephen Hawking,NaN,NaN,0.72,323.647880900069,323.723068300053,,NaN,,,D12,5,308,13,Encoding,NaN,S01
+acoustic_guitar,Jim Carrey,NaN,NaN,0.69,324.423622500035,324.507220300031,NaN,NaN,NaN,,D12,5,309,14,Encoding,NaN,S01
+acoustic_guitar,Jim Carrey,NaN,NaN,0.69,325.175097399973,325.256339600077,,NaN,,,D12,5,310,14,Encoding,NaN,S01
+hand_saw,Sarah Palin,Steve Jobs,Mother Teresa,0.69,327.956210899982,328.039437800064,,1,,,D12,5,311,1,Retrieval,Retrieval,S01
+hand_saw,Sarah Palin,Steve Jobs,Mother Teresa,0.69,328.597660799976,328.67287140002,,NaN,,,D12,5,312,1,Retrieval,Retrieval,S01
+disk,Mother Teresa,Sarah Palin,Robin Williams,0.55,329.239292600076,329.322625400033,,2,,,D12,5,313,2,Retrieval,Retrieval,S01
+disk,Mother Teresa,Sarah Palin,Robin Williams,0.55,329.99420820002,330.072646799963,,NaN,,,D12,5,314,2,Retrieval,Retrieval,S01
+cowbell,Daniel Radcliffe,Keira Knightley,Oprah Winfrey,0.67,330.762730699964,330.839537000051,,1,,,D12,5,315,3,Retrieval,Retrieval,S01
+cowbell,Daniel Radcliffe,Keira Knightley,Oprah Winfrey,0.67,331.509639800061,331.589454400004,,NaN,,,D12,5,316,3,Retrieval,Retrieval,S01
+flask,Justin Bieber,Mother Teresa,Stephen Hawking,0.75,332.363050700049,332.439315799973,,4,,,D12,5,317,4,Retrieval,Lure,S01
+flask,Justin Bieber,Mother Teresa,Stephen Hawking,0.75,333.094342799974,333.172692600056,,NaN,,,D12,5,318,4,Retrieval,Lure,S01
+plunger,Oprah Winfrey,Robin Williams,Mother Teresa,0.54,333.728008500068,333.806136399973,,2,,,D12,5,319,5,Retrieval,Retrieval,S01
+plunger,Oprah Winfrey,Robin Williams,Mother Teresa,0.54,334.511948500061,334.589256000007,,NaN,,,D12,5,320,5,Retrieval,Retrieval,S01
+carabiner,Justin Bieber,Steve Jobs,Keira Knightley,0.74,335.351196700009,335.422492500045,,3,,,D12,5,321,6,Retrieval,Retrieval,S01
+carabiner,Justin Bieber,Steve Jobs,Keira Knightley,0.74,335.97855790006,336.055853500031,,NaN,,,D12,5,322,6,Retrieval,Retrieval,S01
+tuba,George Bush,Nicole Kidman,Stephen Hawking,0.69,336.762732899981,336.838965800009,,4,,,D12,5,323,7,Retrieval,Lure,S01
+tuba,George Bush,Nicole Kidman,Stephen Hawking,0.69,337.378858100041,337.455562100047,,NaN,,,D12,5,324,7,Retrieval,Lure,S01
+laptop,Steve Jobs,Nicole Kidman,Keira Knightley,0.5,337.979534600046,338.055820600013,,2,,,D12,5,325,8,Retrieval,Retrieval,S01
+laptop,Steve Jobs,Nicole Kidman,Keira Knightley,0.5,338.679552600021,338.755601000041,,NaN,,,D12,5,326,8,Retrieval,Retrieval,S01
+swiss_army_knife,Charlie Chaplin,Oprah Winfrey,Sarah Palin,0.55,339.324605699978,339.405681199976,,2,,,D12,5,327,9,Retrieval,Retrieval,S01
+swiss_army_knife,Charlie Chaplin,Oprah Winfrey,Sarah Palin,0.55,340.061216900009,340.138897900004,,NaN,,,D12,5,328,9,Retrieval,Retrieval,S01
+acoustic_guitar,Jim Carrey,Sarah Palin,Justin Bieber,0.69,340.844209700008,340.922198400018,,2,,,D12,5,329,10,Retrieval,Retrieval,S01
+acoustic_guitar,Jim Carrey,Sarah Palin,Justin Bieber,0.69,341.488828900037,341.571985800052,,NaN,,,D12,5,330,10,Retrieval,Retrieval,S01
+flashlight,Steve Jobs,George Bush,Nicole Kidman,0.67,342.260371800046,342.338908200036,,4,,,D12,5,331,11,Retrieval,Lure,S01
+flashlight,Steve Jobs,George Bush,Nicole Kidman,0.67,343.027127800044,343.105571700027,,NaN,,,D12,5,332,11,Retrieval,Lure,S01
+harp,Taylor Swift,Justin Bieber,Mother Teresa,0.66,343.774298500037,343.855442699976,,1,,,D12,5,333,12,Retrieval,Retrieval,S01
+harp,Taylor Swift,Justin Bieber,Mother Teresa,0.66,344.545625900035,344.621830200078,,NaN,,,D12,5,334,12,Retrieval,Retrieval,S01
+trowel,Stephen Hawking,Nicole Kidman,Mother Teresa,0.72,345.363026799983,345.438708600006,,3,,,D12,5,335,13,Retrieval,Retrieval,S01
+trowel,Stephen Hawking,Nicole Kidman,Mother Teresa,0.72,346.128731000004,346.20542220003,,NaN,,,D12,5,336,13,Retrieval,Retrieval,S01
+coin,Keira Knightley,Charlie Chaplin,Stephen Hawking,0.64,346.855462600011,346.938677600003,,1,,,D12,5,337,14,Retrieval,Retrieval,S01
+coin,Keira Knightley,Charlie Chaplin,Stephen Hawking,0.64,347.695604200009,347.771730500041,,NaN,,,D12,5,338,14,Retrieval,Retrieval,S01
+blouse,George Bush,Keira Knightley,Oprah Winfrey,0.67,348.46428960003,348.538604000001,,1,,,D12,5,339,15,Retrieval,Retrieval,S01
+blouse,George Bush,Keira Knightley,Oprah Winfrey,0.67,349.174188700039,349.255131600075,,NaN,,,D12,5,340,15,Retrieval,Retrieval,S01
+wheelbarrow,George Bush,Mother Teresa,Taylor Swift,0.73,350.010724900058,350.088492100011,,4,,,D12,5,341,16,Retrieval,Lure,S01
+wheelbarrow,George Bush,Mother Teresa,Taylor Swift,0.73,350.721576599986,350.805076200049,,NaN,,,D12,5,342,16,Retrieval,Lure,S01
+headband,Nicole Kidman,Justin Bieber,Daniel Radcliffe,0.54,351.362641000072,351.438390600029,,1,,,D12,5,343,17,Retrieval,Retrieval,S01
+headband,Nicole Kidman,Justin Bieber,Daniel Radcliffe,0.54,352.07156880002,352.154883900075,,NaN,,,D12,5,344,17,Retrieval,Retrieval,S01
+syringe,Robin Williams,Mother Teresa,Oprah Winfrey,0.65,352.821584900026,352.904846400023,,1,,,D12,5,345,18,Retrieval,Retrieval,S01
+syringe,Robin Williams,Mother Teresa,Oprah Winfrey,0.65,353.471482499968,353.555519800051,,NaN,,,D12,5,346,18,Retrieval,Retrieval,S01
