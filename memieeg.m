@@ -7,6 +7,7 @@ arguments
     txtsize(1,1){mustBeNumeric} = 40
     
 end
+
 % A function that runs an associative memory task in pyschtoolbox.
 % The task is to name the associate an object with the face of a celebrity, and then remember the association
 % The task is divided into blocks.
