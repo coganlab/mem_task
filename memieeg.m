@@ -27,7 +27,7 @@ object_folder = fullfile(cf,'stimuli','objects');
 instruction_folder = fullfile(cf,'instructions');
 
 %% Specify time intervals in seconds241324321432 
-encoding_time = 1.5;
+encoding_time = 2;
 elaborate_time = 3;
 rest_time = 20;
 fc_time = 3;
