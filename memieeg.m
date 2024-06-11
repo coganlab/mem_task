@@ -40,7 +40,7 @@ fc_time = 3;
 retrieval_time = 3;
 
 % fixation cross limits
-low_lim = 0.5;
+low_lim = 0.55;
 upp_lim = 0.75;
 %% Specify Image Dimensions
 
@@ -94,7 +94,10 @@ data_csv(1).trial_total =  [];
 data_csv(1).trial_task =  [];
 data_csv(1).trial_type =  [];
 data_csv(1).retrival_type =  [];
-
+data_csv(1).baseline_onset =  [];
+data_csv(1).baseline_end =  [];
+data_csv(1).fix_onset =  [];
+data_csv(1).fix_end =  [];
 %% Start PTB
 % Set Screen Parameters
 %make sure computer has correct psychtoolbox for task
@@ -218,7 +221,7 @@ for block_idx = block:6
     
     if block_idx == 0
         for slide_idx = 1:n_slides
-            inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.jpg']));
+            inst = imread(fullfile(instruction_folder,['instructions' num2str(slide_idx) '.JPG']));
             inst = Screen('MakeTexture', windowPtr, inst);
             Screen('DrawTexture', windowPtr, inst, [], dstRect);
             Screen('Flip', windowPtr);
@@ -299,15 +302,19 @@ for block_idx = block:6
         dstRect2 = CenterRectOnPointd(rect2, xPos2 + s4 / 2, yPos + s3 / 2);
         
         % Baseline White Screen
-        baseline_time =enc_baseline_order(trial_idx,1);
+        baseline_time = enc_baseline_order(trial_idx,1);
         stimFlipFrames = round(baseline_time/ifi);
+        flipTimes = zeros(1,stimFlipFrames);
+
         frameCount = 1;
         
         while frameCount <= stimFlipFrames
-            Screen('Flip', windowPtr);
+            flipTimes(1,frameCount) = Screen('Flip', windowPtr);
             frameCount = frameCount + 1;
         end
         
+        baseline_Onset = flipTimes(1,1) - taskStartTime;
+        baseline_End = flipTimes(1,end) - taskStartTime;
         
         % Encoding Period
         stimFlipFrames = round(encoding_time/ifi);
@@ -332,13 +339,17 @@ for block_idx = block:6
         % Fixation Cross
         fix_duration = round( low_lim + (upp_lim - low_lim) * rand,2);
         stimFlipFrames = round(fix_duration/ifi);
+        flipTimes = zeros(1,stimFlipFrames);
         frameCount = 1;
         
         while frameCount <= stimFlipFrames
             DrawFormattedText(windowPtr, '+', 'center', 'center', black);
-            Screen('Flip', windowPtr);
+            flipTimes(1,frameCount) = Screen('Flip', windowPtr);
             frameCount = frameCount + 1;
         end
+        
+        fix_Onset = flipTimes(1,1) - taskStartTime;
+        fix_End = flipTimes(1,end) - taskStartTime;
         
         % Elaborate Phase
         stimFlipFrames = round(elaborate_time/ifi);
@@ -409,6 +420,10 @@ for block_idx = block:6
         data_csv(trial_total).subject_ID =  subject;
         data_csv(trial_total).list =  list;
         data_csv(trial_total).block =  block_idx;
+        data_csv(trial_total).baseline_onset =  baseline_Onset;
+        data_csv(trial_total).baseline_end = baseline_End;
+        data_csv(trial_total).fix_onset =  NaN;
+        data_csv(trial_total).fix_end =  NaN;
         
         trial_total = trial_total + 1;
         
@@ -425,11 +440,16 @@ for block_idx = block:6
         data_csv(trial_total).RT =  response_time  - elaborate_Onset;
         data_csv(trial_total).trial_total =  trial_total;
         data_csv(trial_total).trial_task =  trial_idx;
-        data_csv(trial_total).trial_type =  'Encoding';
+        data_csv(trial_total).trial_type =  'Encoding_Elaborate';
         data_csv(trial_total).retrival_type =  NaN;
         data_csv(trial_total).subject_ID =  subject;
         data_csv(trial_total).list =  list;
         data_csv(trial_total).block =  block_idx;
+        data_csv(trial_total).baseline_onset =  NaN;
+        data_csv(trial_total).baseline_end = NaN;
+        data_csv(trial_total).fix_onset =  fix_Onset;
+        data_csv(trial_total).fix_end =  fix_End;
+        
         trial_total = trial_total + 1;
 
         
@@ -524,15 +544,19 @@ for block_idx = block:6
         dstRect1 = CenterRectOnPointd(rect1, xPos1 + s2 / 2, yPos + s1 / 2);
         
         % Baseline White Screen
-        baseline_time =ret_baseline_order(trial_idx,1);
+        baseline_time = ret_baseline_order(trial_idx,1);
         stimFlipFrames = round(baseline_time/ifi);
+        flipTimes = zeros(1,stimFlipFrames);
+
         frameCount = 1;
         
         while frameCount <= stimFlipFrames
-            Screen('Flip', windowPtr);
+            flipTimes(1,frameCount) = Screen('Flip', windowPtr);
             frameCount = frameCount + 1;
         end
         
+        baseline_Onset = flipTimes(1,1) - taskStartTime;
+        baseline_End = flipTimes(1,end) - taskStartTime;
         
         % Force Choice
         
@@ -589,13 +613,17 @@ for block_idx = block:6
         % Fixation Cross
         fix_duration = round( low_lim + (upp_lim - low_lim) * rand,2);
         stimFlipFrames = round(fix_duration/ifi);
+        flipTimes = zeros(1,stimFlipFrames);
         frameCount = 1;
         
         while frameCount <= stimFlipFrames
             DrawFormattedText(windowPtr, '+', 'center', 'center', black);
-            Screen('Flip', windowPtr);
+            flipTimes(1,frameCount) = Screen('Flip', windowPtr);
             frameCount = frameCount + 1;
         end
+        
+        fix_Onset = flipTimes(1,1) - taskStartTime;
+        fix_End = flipTimes(1,end) - taskStartTime;
         
         % Remember Phase
         stimFlipFrames = round(retrieval_time/ifi);
@@ -664,11 +692,15 @@ for block_idx = block:6
         data_csv(trial_total).RT =  fc_response_time  - fc_Onset;
         data_csv(trial_total).trial_total =  trial_total;
         data_csv(trial_total).trial_task =  trial_idx;
-        data_csv(trial_total).trial_type =  'Retrieval';
+        data_csv(trial_total).trial_type =  'Retrieval_FC';
         data_csv(trial_total).retrival_type =  retrieval_type;
         data_csv(trial_total).subject_ID =  subject;
         data_csv(trial_total).list =  list;
         data_csv(trial_total).block =  block_idx;
+        data_csv(trial_total).baseline_onset =  baseline_Onset;
+        data_csv(trial_total).baseline_end = baseline_End;
+        data_csv(trial_total).fix_onset =  NaN;
+        data_csv(trial_total).fix_end =  NaN;
         
         trial_total = trial_total + 1;
         
@@ -685,11 +717,15 @@ for block_idx = block:6
         data_csv(trial_total).response_onset =  recall_response_time;
         data_csv(trial_total).trial_total =  trial_total;
         data_csv(trial_total).trial_task =  trial_idx;
-        data_csv(trial_total).trial_type =  'Retrieval';
+        data_csv(trial_total).trial_type =  'Retrieval_Recall';
         data_csv(trial_total).retrival_type =  retrieval_type;
         data_csv(trial_total).subject_ID =  subject;
         data_csv(trial_total).list =  list;
         data_csv(trial_total).block =  block_idx;
+        data_csv(trial_total).baseline_onset =  NaN;
+        data_csv(trial_total).baseline_end = NaN;
+        data_csv(trial_total).fix_onset =  fix_Onset;
+        data_csv(trial_total).fix_end =  fix_End;
         trial_total = trial_total + 1;
         
     end
@@ -748,6 +784,6 @@ for block_idx = block:6
 end
 
 Screen('CloseAll');
-
+ 
 end
 
