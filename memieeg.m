@@ -167,8 +167,13 @@ taskStartTime = GetSecs; % time experiment starts
 
 counter = 0;
 trial_total = 1;
+if block == 0
+    n_blocks = 0;
+else
+    n_blocks =6;
+end
 
-for block_idx = block:6
+for block_idx = block:n_blocks
     
     name2save = [subject '_MemTask_List_' list '_Block_' num2str(block_idx) '_' time '.csv'];
     name2save = fullfile(sub_folder,name2save);
@@ -511,7 +516,7 @@ for block_idx = block:6
         %Read Stimuli
         row_iterator = trial_idx + n_encoding;
         retrieval_type = ret_type_order{trial_idx,1};
-        trial_object = imread(fullfile(object_folder, [ret_object_order{trial_idx,1} '_exemplar1.JPG']));
+        trial_object = imread(fullfile(object_folder, [ret_object_order{trial_idx,1} '_exemplar1.jpg']));
         trial_object = Screen('MakeTexture', windowPtr, trial_object);
         
         trial_target = ret_face_order{trial_idx,1};
