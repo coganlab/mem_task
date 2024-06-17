@@ -1,14 +1,14 @@
-"object","target","lure1","lure2","baseline","trial_type","retrieval_type"
-"snowflake","Angelina Jolie","Bruce Willis","Robert De Niro",0.61,"Encoding","Encoding"
-"whistle","Bruce Willis","Robert De Niro","Daniel Craig",0.5,"Encoding","Encoding"
-"armor","Daniel Craig","Robert De Niro","Bruce Willis",0.5,"Encoding","Encoding"
-"violin","Lady Diana","Robert De Niro","Daniel Craig",0.66,"Encoding","Encoding"
-"sarcophagus","Robert De Niro","Daniel Craig","Bruce Willis",0.55,"Encoding","Encoding"
-"handcuff","Lady Diana","Bruce Willis","Angelina Jolie",0.5,"Retrieval","Lure"
-"candle","Daniel Craig","Bruce Willis","Angelina Jolie",0.54,"Retrieval","Lure"
-"violin","Lady Diana","Robert De Niro","Daniel Craig",0.66,"Retrieval","Retrieval"
-"tape","Lady Diana","Daniel Craig","Robert De Niro",0.53,"Retrieval","Lure"
-"whistle","Bruce Willis","Robert De Niro","Daniel Craig",0.5,"Retrieval","Retrieval"
-"snowflake","Angelina Jolie","Bruce Willis","Robert De Niro",0.61,"Retrieval","Retrieval"
-"armor","Daniel Craig","Robert De Niro","Bruce Willis",0.5,"Retrieval","Retrieval"
-"sarcophagus","Robert De Niro","Daniel Craig","Bruce Willis",0.55,"Retrieval","Retrieval"
+object,target,lure1,lure2,baseline,trial_type,retrieval_type
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,Encoding,Encoding
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,Encoding,Encoding
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,Encoding,Encoding
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,Encoding,Encoding
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,Encoding,Encoding
+armor,Daniel Craig,Robert De Niro,Bruce Willis,0.5,Retrieval,Retrieval
+sarcophagus,Robert De Niro,Daniel Craig,Bruce Willis,0.55,Retrieval,Retrieval
+violin,Lady Diana,Robert De Niro,Daniel Craig,0.66,Retrieval,Retrieval
+tape,Lady Diana,Daniel Craig,Robert De Niro,0.53,Retrieval,Lure
+whistle,Bruce Willis,Robert De Niro,Daniel Craig,0.5,Retrieval,Retrieval
+snowflake,Angelina Jolie,Bruce Willis,Robert De Niro,0.61,Retrieval,Retrieval
+handcuff,Lady Diana,Bruce Willis,Angelina Jolie,0.5,Retrieval,Lure
+candle,Daniel Craig,Bruce Willis,Angelina Jolie,0.54,Retrieval,Lure

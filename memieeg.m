@@ -33,10 +33,10 @@ object_folder = fullfile(cf,'stimuli','objects');
 instruction_folder = fullfile(cf,'instructions');
 
 %% Specify time intervals in seconds241324321432
-encoding_time = 2;
+encoding_time = 3;
 elaborate_time = 3;
-rest_time = 20;
-fc_time = 3;
+rest_time = 10;
+fc_time = 4;
 retrieval_time = 3;
 
 % fixation cross limits
